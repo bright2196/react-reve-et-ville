@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styles from './Link.module.css';
+import styles from './Link.module.scss';
 import PropTypes from 'prop-types';
 import { AppContext } from '../../App/AppProvider'
 

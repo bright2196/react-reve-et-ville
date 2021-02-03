@@ -1,10 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import './App.css'
+import './App.scss'
 import AppProvider from './AppProvider'
 import Router from './Router'
-
-
-
 
 const App = () => {
   // const [page, setPage] = useState("home");
@@ -16,7 +13,6 @@ const App = () => {
         <Router/>
       </div>
     </AppProvider>
-  
   );
 };
 

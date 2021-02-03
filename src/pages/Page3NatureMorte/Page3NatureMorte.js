@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./Page3NatureMorte.module.css";
+import styles from "./Page3NatureMorte.module.scss";
 import BackgroundImage from "../../components/BackgroundImage/BackgroundImage";
 
 const Page3NatureMorte = () => {

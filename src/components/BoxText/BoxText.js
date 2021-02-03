@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './BoxText.module.css';
+import styles from './BoxText.module.scss';
 import PropTypes from 'prop-types';
 
 

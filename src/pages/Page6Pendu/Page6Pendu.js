@@ -1,4 +1,4 @@
-import styles from "./Page6Pendu.module.css";
+import styles from "./Page6Pendu.module.scss";
 import React from 'react'
 
 const Page6Pendu = () => {
