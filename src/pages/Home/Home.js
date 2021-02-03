@@ -1,7 +1,6 @@
 
 import styles from "./Home.module.scss";
 import React from 'react'
-import Header from "../../components/Header/Header";
 import NormalButton from "../../components/NormalButton/NormalButton";
 
 const Home = () => {
