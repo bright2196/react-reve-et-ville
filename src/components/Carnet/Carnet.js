@@ -2,10 +2,15 @@ import React,{ useState } from 'react';
 import styles from './Carnet.module.scss';
 
 // IMG
+import LeftArrow from '../../img/carnet/arrow-left.png'
+import RightArrow from '../../img/carnet/arrow-right.png'
 import Page0 from '../../img/carnet/CarnetPageBase.png'
 import Page1 from '../../img/carnet/CarnetPage1.png'
 import Page2 from '../../img/carnet/CarnetPage2.png'
 import Page3 from '../../img/carnet/CarnetPage3.png'
+
+//Song
+import AudioPage from '../../audio/PagesQuiTourne.wav'
 
 const carnetPages = [
     Page0,
@@ -23,6 +28,8 @@ class Carnet extends React.Component {
         };
       }
 
+    audioPage = new Audio(AudioPage);
+
     render() {
         const { currentPageIndex } = this.state
 
@@ -32,9 +39,11 @@ class Carnet extends React.Component {
     <div> 
         <div className={parentClassName}>
             {
-                currentPageIndex == 0 
+                currentPageIndex > 0 
                 ?
-                (<div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex - 1 })}></div>)
+                (<div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex - 1 })}>
+                    <img  src={LeftArrow} />
+                </div>)
                 :
                 (<div className={styles.fleche}></div>)
             }
@@ -45,6 +54,7 @@ class Carnet extends React.Component {
                 currentPageIndex < carnetPages.length-1
                 ? (
                 <div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex + 1 })}>
+                    <img  src={RightArrow} />
                 </div>
                 )
                 : (

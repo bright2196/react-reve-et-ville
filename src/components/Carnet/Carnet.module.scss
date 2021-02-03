@@ -29,7 +29,14 @@
 .fleche{
     width: 10vh;
     height: 10vh;
-    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fleche img{
+    width: 40%;
+    cursor: pointer;
 }
 
 .Carnet img {
