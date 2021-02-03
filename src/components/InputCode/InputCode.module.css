@@ -1,0 +1,33 @@
+.InputCode[type=text] {
+    background-color: RGBA(0,0,0,0.74);
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 13vw;
+    color: white;  
+    text-decoration: none;
+    font-family: "MadeMirage";
+    font-weight: 550;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-start;
+    color: #FFFFFF;
+    border: double #FFFDF1;
+    border-radius: 5px;
+    
+}
+
+.InputCode:focus {
+    outline: none;
+}
+
+.InputCode::placeholder {
+    color:  #fffdf1d2;
+  }
+.ContainerInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
