@@ -14,7 +14,7 @@ const Page4Loupe = () => {
           namePerso="Vous"
           textBoxContenu="Une page secrète ! Jetons un œil au carnet pour la trouver et découvrir ce qu'elle contient."
         />
-        
+
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import styles from "./Page7Suie.module.css";
+import styles from "./Page7Suie.module.scss";
 import React from 'react'
 import InputText from "../../components/InputCode/InputCode";
 import imagePage7 from "./img/tableauPage7.jpg"

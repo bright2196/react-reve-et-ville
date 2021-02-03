@@ -1,4 +1,4 @@
-import styles from "./Page5Salon.module.css";
+import styles from "./Page5Salon.module.scss";
 import React from 'react'
 
 const Page5Salon = () => {
