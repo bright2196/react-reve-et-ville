@@ -42,31 +42,19 @@ class Carnet extends React.Component {
                 currentPageIndex > 0 
                 ?
                 (<div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex - 1 })}>
-<<<<<<< HEAD
                     <img src={LeftArrow} alt="Left arrow" />
-=======
-                    <img  src={LeftArrow} alt=""/>
->>>>>>> b46c41c70551ad11522b76559085ac71ff027c45
                 </div>)
                 :
                 (<div className={styles.fleche}></div>)
             }
             <div className={styles.Carnet}>
-<<<<<<< HEAD
                 <img src={carnetPages[currentPageIndex]} alt="Carnet" /> 
-=======
-                <img src={carnetPages[currentPageIndex]} alt="" /> 
->>>>>>> b46c41c70551ad11522b76559085ac71ff027c45
             </div>
             {
                 currentPageIndex < carnetPages.length-1
                 ? (
                 <div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex + 1 })}>
-<<<<<<< HEAD
                     <img  src={RightArrow} alt="Right arrow" />
-=======
-                    <img  src={RightArrow} alt="" />
->>>>>>> b46c41c70551ad11522b76559085ac71ff027c45
                 </div>
                 )
                 : (
