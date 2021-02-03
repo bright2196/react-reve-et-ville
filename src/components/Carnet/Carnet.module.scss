@@ -6,7 +6,7 @@
     position: fixed;
     width: 100%;
     z-index: 3;
-    transform: translatey(100%);
+    transform: translatey(100vh);
     transition: transform 2s;
 }
 
@@ -18,7 +18,7 @@
     position: fixed;
     width: 100%;
     z-index: 3;
-    transform: translatey(10%);
+    transform: translatey(10vh);
     transition: transform 2s;
 }
 
@@ -42,6 +42,18 @@
 .Carnet img {
     width: 100%;
 }
+
+@media (max-width: 1300px) {
+    .ContainerCarnetOn{
+        transform: translatey(20vh);
+    }
+  }
+
+@media (max-width: 800px) {
+    .ContainerCarnetOn{
+        transform: translatey(40vh);
+    }
+  }
 
 
 
