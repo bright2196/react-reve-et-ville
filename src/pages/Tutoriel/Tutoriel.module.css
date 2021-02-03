@@ -1,0 +1,35 @@
+.containerTutoriel {
+    background-image: url(./img/backgroundIntro.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vh;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tutorielText {
+    font-family: MadeMirage;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    width: 600px;
+    align-items: center;
+    color: #4C2209;
+    margin-top: 150px;
+
+
+
+}
+
+.buttonContainer {
+    margin-top: 13vh;
+}
