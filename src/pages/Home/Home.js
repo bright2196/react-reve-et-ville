@@ -6,7 +6,6 @@ import NormalButton from "../../components/NormalButton/NormalButton";
 const Home = () => {
   return (
     <div className={styles.containerAbout}>
-      <div>
         <div className={styles.titlescreen}>
             <div className={styles.title}>
               <h1>L'amour de l'art</h1>
@@ -22,7 +21,6 @@ const Home = () => {
             </div>
         </div>
       </div>
-    </div>
   );
 };
 

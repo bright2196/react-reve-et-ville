@@ -1,4 +1,4 @@
-import styles from "./Tutoriel.module.css";
+import styles from "./Tutoriel.module.scss";
 import React from 'react'
 import NormalButton from "../../components/NormalButton/NormalButton";
 
