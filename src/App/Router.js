@@ -18,8 +18,21 @@ import { AppContext } from "./AppProvider"
 
 const pages = {
     home: Home,
-    pagecarte: Page1Carte,
-    pagemusee: Page2Musee
+    pageCarte: Page1Carte,
+    pageMusee: Page2Musee,
+    pageNatureMorte: Page3NatureMorte,
+    pageLoupe: Page4Loupe,
+    pageSalon: Page5Salon,
+    pagePendu: Page6Pendu,
+    pageSuie: Page7Suie,
+    pageTransition: Page8Transition,
+    pageGravurePoussiere: Page9GravurePoussiere,
+    pageGravureSansPoussiere: Page10GravureSansPoussiere,
+    pageGrandMere: Page11GrandMere,
+    pageFinal: Page12Final,
+    prologue: Prologue,
+    tutoriel: Tutoriel
+
 }
 
 {/* <BrowserRouter>
