@@ -1,4 +1,3 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.scss'
 import AppProvider from './AppProvider'
 import Router from './Router'
