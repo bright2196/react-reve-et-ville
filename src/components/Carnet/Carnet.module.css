@@ -1,0 +1,22 @@
+.ContainerCarnet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.Carnet{
+    width: 75vw;
+}
+
+.fleche{
+    width: 10vh;
+    height: 10vh;
+    background-color: chocolate;
+}
+
+.Carnet img {
+    width: 100%;
+}

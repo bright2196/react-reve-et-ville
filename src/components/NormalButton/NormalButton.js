@@ -30,7 +30,5 @@ NormalButton.propTypes = {
     fontWeight: PropTypes.string,
     color: PropTypes.string, 
     fontSize: PropTypes.string
-
-
   }
   export default NormalButton;
