@@ -1,6 +1,6 @@
 
 import React from "react";
-import styles from './NormalButton.module.css';
+import styles from './NormalButton.module.scss';
 import PropTypes from 'prop-types';
 
 

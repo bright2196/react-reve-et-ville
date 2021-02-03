@@ -1,0 +1,39 @@
+.containerPrologue{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        .desc{
+        font-family: 'Mirage';
+        font-size: 18px;
+        color: #4C2209;
+        letter-spacing: 0.1vw;
+        width: 60vw;
+        text-align: center;
+        }
+}
+
+.scracthpaper{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Imagecitation{
+    width: 350px;
+}
+
+.citation{
+    position: absolute;
+    font-family: 'MirageBold';
+    font-size: 14px;
+    color: #4C2209;
+    letter-spacing: 0.1vw;
+    width: 60vw;
+    text-align: center;
+    transform: rotate(-5deg);
+}
