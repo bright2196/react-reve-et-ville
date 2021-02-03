@@ -2,7 +2,6 @@
 import React from "react";
 import styles from './NormalButton.module.css';
 import PropTypes from 'prop-types';
-import { Link } from "react-router-dom";
 
 
 
@@ -12,9 +11,9 @@ class NormalButton extends React.Component {
     return (
     <div className= {styles.ContainerButton}>
        
-      <Link className={styles.Button} to = {this.props.link}>
+      <button className={styles.Button} to = {this.props.link}>
       {this.props.buttonText} 
-      </Link>
+      </button>
       
     
       </div>

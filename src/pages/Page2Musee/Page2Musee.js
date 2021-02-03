@@ -1,11 +1,20 @@
 
 import styles from "./Page2Musee.module.css";
 import React from 'react'
+import BoxText from "../../components/BoxText/BoxText";
 
 const Page2Musee = () => {
   return (
     <div className={styles.containerPage2Musee}>
-      Page2Musee
+       <div className={styles.containerTextMusee}>
+
+          <BoxText
+          textBoxContenu="Le regard du cavalier te guidera... Qu’est ce que cela veut bien pouvoir dire ?"
+          namePerso="Vous"
+          
+
+          />
+       </div>
     </div>
   );
 };
