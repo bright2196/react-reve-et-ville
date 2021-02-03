@@ -4,7 +4,9 @@ import React from 'react'
 const Page8Transition = () => {
   return (
     <div className={styles.containerPage8Transition}>
-      Page8Transition
+        <div className={styles.containerPage8Transition}>
+            
+        </div>
     </div>
   );
 };
