@@ -9,11 +9,10 @@
     font-family: "MadeMirage";
     font-weight: 550;
     font-size: 15px;
-    display: flex;
-    align-items: flex-start;
     color: #FFFFFF;
     border: double #FFFDF1;
     border-radius: 5px;
+    height: 40px;
     
 }
 
@@ -26,8 +25,7 @@
   }
 .ContainerInput {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     min-height: 100vh;
 
 }
