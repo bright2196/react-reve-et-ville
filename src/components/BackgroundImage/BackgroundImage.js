@@ -12,6 +12,12 @@ let cx = classNames.bind(styles);
 
 
 class BackgroundImage extends React.Component {
+<<<<<<< HEAD
+=======
+    
+
+  
+>>>>>>> b46c41c70551ad11522b76559085ac71ff027c45
     render() {
         let num = this.props.ImageNum
         let ImageLink
