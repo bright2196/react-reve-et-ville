@@ -8,6 +8,7 @@ import Page0 from '../../img/carnet/CarnetPageBase.png'
 import Page1 from '../../img/carnet/CarnetPage1.png'
 import Page2 from '../../img/carnet/CarnetPage2.png'
 import Page3 from '../../img/carnet/CarnetPage3.png'
+import Page4 from '../../img/carnet/CarnetPage4.png'
 
 //Song
 import AudioPage from '../../audio/PagesQuiTourne.wav'
@@ -16,7 +17,8 @@ const carnetPages = [
     Page0,
     Page1,
     Page2,
-    Page3
+    Page3,
+    Page4
   ]
 
 class Carnet extends React.Component {
@@ -31,7 +33,7 @@ class Carnet extends React.Component {
     audioPage = new Audio(AudioPage);
 
     render() {
-        const { currentPageIndex } = this.state
+    const { currentPageIndex } = this.state
 
     const parentClassName = this.props.ouverture ? styles.ContainerCarnetOn : styles.ContainerCarnetOff
 

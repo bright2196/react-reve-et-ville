@@ -1,6 +1,7 @@
 import styles from "./Tutoriel.module.scss";
 import React from 'react'
 import NormalButton from "../../components/NormalButton/NormalButton";
+import Link from '../../components/Link/Link'
 
 const Tutoriel = () => {
   return (
@@ -9,10 +10,13 @@ const Tutoriel = () => {
           Soyez attentifs aux détails et n'hésitez pas à fouiller! 
           Résolvez le mystère de ce carnet…</p>
       <div className={styles.buttonContainer}>
-        <NormalButton
-            buttonText="J'ai compris !"
-            link=""
-        />
+        {/* <Link href="pageCarte"> */}
+        <Link href="pagePendu">
+          <NormalButton
+              buttonText="J'ai compris !"
+              link=""
+          />
+        </Link >
       </div>
     </div>
   );

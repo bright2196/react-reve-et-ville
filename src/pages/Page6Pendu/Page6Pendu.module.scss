@@ -1,0 +1,26 @@
+.containerPage6Pendu {
+    background-image: url(../../pages/Home/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btnContainer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn {
+    width: 40vw;
+    margin: 10px;
+}
+
+.img {
+    margin-left: 37%;
+}
