@@ -1,5 +1,7 @@
 import styles from "./Prologue.module.scss";
 import React from 'react'
+import NormalButton from "../../components/NormalButton/NormalButton";
+import Link from '../../components/Link/Link'
 
 import image from "../../img/scratchpaper.png"
 
@@ -16,6 +18,7 @@ const Prologue = () => {
         <img className={styles.Imagecitation} src={image}  alt="Scratched Paper" />
         <p className={styles.citation}>Le regard du cavalier te guidera.</p>
       </div>
+      <Link href="pageCarte" ><NormalButton buttonText="voir la suite ->" link="" /></Link >
 
     </div>
   );

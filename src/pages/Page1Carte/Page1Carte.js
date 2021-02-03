@@ -2,12 +2,15 @@
 import styles from "./Page1Carte.module.scss";
 import React from 'react'
 import Carte from "./img/carteBordeaux.png"
+import NormalButton from "../../components/NormalButton/NormalButton";
+import Link from '../../components/Link/Link'
+
 const Page1Carte = () => {
   return (
     <div className={styles.containerPage1Carte}>
         <div className={styles.containerCarteImage}>
-
             <img className={styles.imageCarte} src={Carte} alt="Carte de Bordeaux"/>
+            <Link href="pageMusee" ><NormalButton buttonText="J'ai trouvé l'emplacement je passe a la suite ->" link="" /></Link >
         </div>
     </div>
   );

@@ -10,8 +10,7 @@ const Tutoriel = () => {
           Soyez attentifs aux détails et n'hésitez pas à fouiller! 
           Résolvez le mystère de ce carnet…</p>
       <div className={styles.buttonContainer}>
-        {/* <Link href="pageCarte"> */}
-        <Link href="pagePendu">
+        <Link href="prologue">
           <NormalButton
               buttonText="J'ai compris !"
               link=""

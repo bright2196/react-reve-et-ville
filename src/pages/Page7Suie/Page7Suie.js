@@ -3,6 +3,8 @@ import React from 'react'
 import InputText from "../../components/InputCode/InputCode";
 import imagePage7 from "./img/tableauPage7.jpg"
 import BoxText from "../../components/BoxText/BoxText";
+import NormalButton from "../../components/NormalButton/NormalButton";
+import Link from '../../components/Link/Link'
 
 const Page7Suie = () => {
   return (
@@ -22,6 +24,7 @@ const Page7Suie = () => {
             namePerso="Vous"
             />
         </div>
+        <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code, voir la suite ->" link="" /></Link >
     </div>
   );
 };

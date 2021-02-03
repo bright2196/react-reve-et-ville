@@ -2,7 +2,7 @@ import React from "react";
 import styles from './BackgroundImage.module.scss';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
-import image from './Img/tactical4-1-antoine-tardivel.jpg';
+import image from '../../pages/Home/background.png';
 import image1 from './Img/tactical4-2-antoine-tardivel.jpg';
 import image2 from './Img/tactical4-3-antoine-tardivel.jpg';
 import image3 from './Img/tactical4-4-antoine-tardivel.jpg';
