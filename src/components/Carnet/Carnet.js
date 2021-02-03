@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import styles from './Carnet.module.scss';
 
 // IMG
@@ -44,19 +44,19 @@ class Carnet extends React.Component {
                 currentPageIndex > 0 
                 ?
                 (<div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex - 1 })}>
-                    <img  src={LeftArrow} />
+                    <img src={LeftArrow} alt="Left arrow" />
                 </div>)
                 :
                 (<div className={styles.fleche}></div>)
             }
             <div className={styles.Carnet}>
-                <img src={carnetPages[currentPageIndex]} /> 
+                <img src={carnetPages[currentPageIndex]} alt="Carnet" /> 
             </div>
             {
                 currentPageIndex < carnetPages.length-1
                 ? (
                 <div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex + 1 })}>
-                    <img  src={RightArrow} />
+                    <img  src={RightArrow} alt="Right arrow" />
                 </div>
                 )
                 : (
