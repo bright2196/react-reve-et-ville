@@ -1,0 +1,67 @@
+// Style paragraphe
+
+.homedesc{
+    font-family: 'Mirage';
+    font-size: 18px;
+    color: #4C2209;
+    letter-spacing: 0.1vw;
+    width: 60vw;
+}
+
+// Stylysation du bouton
+
+.beginbutton button{
+    border-style: double;
+    border-width: 5px 5px;
+    border-radius: 5px;
+    border-color: #4C2209;
+    color: #4C2209;
+    font-family: "Mirage";
+    letter-spacing: 1px;
+    font-size: 18px;
+    background: none;
+    padding: 16px 30px 16px 30px;
+}
+
+// Lignes à côté du bouton démarrer
+
+svg{
+    margin: 0 15px;
+}
+
+// Background + disposition
+
+.titlescreen{
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Regis';
+    font-size: 40px;
+    color: #4C2209;
+}
+
+// Titre
+
+.title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 120px;
+
+    h1{
+        margin-bottom: 30px;
+    }
+}
+
+// Disposition bouton
+
+.begin-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

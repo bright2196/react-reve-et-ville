@@ -1,5 +1,5 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import './App.css'
+import './App.scss'
 import Home from "../pages/Home/Home";
 import Page1Carte from "../pages/Page1Carte/Page1Carte";
 import Page2Musee from "../pages/Page2Musee/Page2Musee";
@@ -46,7 +46,7 @@ const App = () => {
        
 
       </BrowserRouter>
--    </div>
+    </div>
   
   );
 };
