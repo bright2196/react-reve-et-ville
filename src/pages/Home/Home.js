@@ -2,7 +2,6 @@
 import styles from "./Home.module.scss";
 import React from 'react'
 import NormalButton from "../../components/NormalButton/NormalButton";
-import Carnet from '../../components/Carnet/Carnet'
 
 const Home = () => {
   return (
@@ -23,7 +22,6 @@ const Home = () => {
             </div>
         </div>
       </div>
-      < Carnet />
     </div>
   );
 };
