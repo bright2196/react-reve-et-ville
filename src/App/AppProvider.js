@@ -1,5 +1,5 @@
 import React, {createContext, useState} from 'react'
-import Home from '../pages/Home/Home';
+// import Home from '../pages/Home/Home';
 
 export const AppContext = createContext({})
 
