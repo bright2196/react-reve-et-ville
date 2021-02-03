@@ -1,4 +1,4 @@
-import styles from "./Page8Transition.module.css";
+import styles from "./Page8Transition.module.scss";
 import React from 'react'
 
 const Page8Transition = () => {

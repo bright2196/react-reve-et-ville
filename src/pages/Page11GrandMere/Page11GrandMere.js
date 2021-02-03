@@ -1,4 +1,4 @@
-import styles from "./Page11GrandMere.module.css";
+import styles from "./Page11GrandMere.module.scss";
 import React from 'react'
 
 const Page11GrandMere = () => {

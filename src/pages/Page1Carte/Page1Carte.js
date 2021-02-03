@@ -1,5 +1,5 @@
 
-import styles from "./Page1Carte.module.css";
+import styles from "./Page1Carte.module.scss";
 import React from 'react'
 import Carte from "./img/carteBordeaux.png"
 const Page1Carte = () => {

@@ -1,4 +1,4 @@
-import styles from "./Page9GravurePoussiere.module.css";
+import styles from "./Page9GravurePoussiere.module.scss";
 import React from 'react'
 
 const Page9GravurePoussiere = () => {

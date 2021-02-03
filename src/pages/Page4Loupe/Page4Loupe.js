@@ -1,4 +1,4 @@
-import styles from "./Page4Loupe.module.css";
+import styles from "./Page4Loupe.module.scss";
 import React from 'react'
 
 const Page4Loupe = () => {
