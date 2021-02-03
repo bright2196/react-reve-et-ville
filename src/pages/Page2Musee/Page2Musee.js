@@ -1,5 +1,5 @@
 
-import styles from "./Page2Musee.module.css";
+import styles from "./Page2Musee.module.scss";
 import React from 'react'
 import BoxText from "../../components/BoxText/BoxText";
 

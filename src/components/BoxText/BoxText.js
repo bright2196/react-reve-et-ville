@@ -1,9 +1,6 @@
 import React from "react";
-import styles from './BoxText.module.css';
+import styles from './BoxText.module.scss';
 import PropTypes from 'prop-types';
-
-
-
 class BoxText extends React.Component {
   
   render() {
@@ -27,4 +24,5 @@ BoxText.propTypes = {
     textBoxContenu: PropTypes.string,
 
   }
-  export default BoxText;
+
+ export default BoxText;

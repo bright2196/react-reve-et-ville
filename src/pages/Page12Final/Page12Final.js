@@ -1,4 +1,4 @@
-import styles from "./Page12Final.module.css";
+import styles from "./Page12Final.module.scss";
 import React from 'react'
 
 const Page12Final = () => {

@@ -1,6 +1,6 @@
 
 import React from "react";
-import styles from './InputCode.module.css';
+import styles from './InputCode.module.scss';
 import PropTypes from 'prop-types';
 
 
