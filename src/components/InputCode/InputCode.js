@@ -12,8 +12,8 @@ class InputText extends React.Component {
     <div className= {styles.ContainerInput}>
 
          <input className= {styles.InputCode} type="text" id="name" name="name" required
-            minlength="4" maxlength="5" size="10" placeholder={this.props.placeholderInput}/>
-        
+            minlength="4" maxlength="8" size="10" placeholder={this.props.placeholderInput}/>
+
 
     </div>
    
