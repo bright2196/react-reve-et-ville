@@ -1,9 +1,22 @@
 .blur{
-    filter: blur(0.5);
+    filter: blur(2px);
 }
 .Image{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
+    transform: scale(1.1);
+}
+.BackgroundImageContainer{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
 }
