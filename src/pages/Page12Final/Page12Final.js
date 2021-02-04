@@ -62,7 +62,7 @@ class Page12Final extends React.Component {
           {
             goNext !== 3 ? 
             (
-              <div onClick={() => this.setState({ goNext: goNext + 1 })} >
+              <div className={styles.boutonSuivantPage12} onClick={() => this.setState({ goNext: goNext + 1 })} >
                 <NormalButton buttonText="Suivant ->" link=""  />
               </div>
             )

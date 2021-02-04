@@ -1,6 +1,6 @@
 import styles from "./Page7Suie.module.scss";
 import React, {useState} from 'react'
-import InputText from "../../components/InputCode/InputCode";
+//import InputText from "../../components/InputCode/InputCode";
 import BoxText from "../../components/BoxText/BoxText";
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
