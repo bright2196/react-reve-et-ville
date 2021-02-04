@@ -8,7 +8,7 @@ import BackgroundImage from '../../components/BackgroundImage/BackgroundImage'
 const Home = () => {
   return (
         <div className={styles.titlescreen}>
-            <BackgroundImage ImageNum={0} Blur={true}/>
+            <BackgroundImage ImageNum={0} Blur={false} Color={true}/>
             <div className={styles.title}>
               <h1>L'amour de l'art</h1>
               <p className={styles.homedesc}>Lancez vous dans une course aux indices et plongez vous dans les toiles du Musée des Beaux Arts de Bordeaux pour mettre au jour un secret bien gardé.</p>
@@ -22,7 +22,7 @@ const Home = () => {
                     buttonText="Commencer l'aventure"
                     link=""
                 />
-              </Link>        
+              </Link>
               <svg xmlns="http://www.w3.org/2000/svg" width="100" height="1" viewBox="0 0 100 1"><defs><style></style></defs><line class="a" x1="100" transform="translate(0 0.5)"/></svg>
             </div>
         </div>
