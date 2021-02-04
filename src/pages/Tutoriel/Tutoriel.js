@@ -3,9 +3,12 @@ import React from 'react'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
 import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
+import Header from '../../components/Header/Header'
 
 const Tutoriel = () => {
   return (
+  <div>
+    <Header colorIcones={false}/>
     <div className={styles.containerTutoriel}>
       <BackgroundImg ImageNum={0} Blur={false}/>
       <p className={styles.tutorielText}>Déplacez votre curseur sur les pages du carnet et sur les tableaux. 
@@ -20,6 +23,7 @@ const Tutoriel = () => {
         </Link >
       </div>
     </div>
+  </div>
   );
 };
 

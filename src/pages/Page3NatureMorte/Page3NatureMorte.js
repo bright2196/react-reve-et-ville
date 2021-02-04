@@ -5,20 +5,24 @@ import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
 import BoxText from '../../components/BoxText/BoxText';
 import naturemorte from '../../img/tableaux/NatureMorte.jpg';
+import Header from '../../components/Header/Header'
 
 const Page3NatureMorte = () => {
   return (
-    <div className={styles.containerPage3NatureMorte}>
-      <BackgroundImg ImageNum={2} Blur={true}/>
-      <img src={naturemorte} className={styles.tableau} alt="Nature Morte Enigme"/>
-      <BoxText
-        textBoxContenu="Ce carnet ressemble étrangement au mien… Mais, cette page n’est pas censée exister..."
-        namePerso="Vous"
-      />
-      <div className={styles.divProvisoire}>
-      <Link href="pageLoupe" >
-        <NormalButton buttonText="Je veux aller à la loupe, voir la suite ->" link="" />
-      </Link >
+    <div>
+      <Header colorIcones={true}/>
+      <div className={styles.containerPage3NatureMorte}>
+        <BackgroundImg ImageNum={2} Blur={true}/>
+        <img src={naturemorte} className={styles.tableau} alt="Nature Morte Enigme"/>
+        <BoxText
+          textBoxContenu="Ce carnet ressemble étrangement au mien… Mais, cette page n’est pas censée exister..."
+          namePerso="Vous"
+        />
+        <div className={styles.divProvisoire}>
+        <Link href="pageLoupe" >
+          <NormalButton buttonText="Je veux aller à la loupe, voir la suite ->" link="" />
+        </Link >
+        </div>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import Link from '../../components/Link/Link'
 import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 import { ReactFlashlight } from "react-flashlight";
 import imgPage7 from "./img/tableauPage7.jpg";
+import Header from '../../components/Header/Header'
 
 
 const style = {
@@ -21,26 +22,29 @@ const style = {
 
 const Page7Suie = () => {
   return (
-    <div className={styles.containerPage7Suie}>
-          <BoxText
-          textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
-          namePerso="Vous"
-          />
-      <BackgroundImg ImageNum={1} Blur={false}/>
-        <div className={styles.ContainerInput}>
-              <InputText
-                  placeholderInput="Saisir le code ici"
-              />
-        </div >
-    <div className={styles.imagePage7}>
-        {/* <ReactFlashlight> */}
-          <div className={styles.imagePage7} style={style}>
+    <div>
+      <Header colorIcones={false}/>
+      <div className={styles.containerPage7Suie}>
+            <BoxText
+            textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
+            namePerso="Vous"
+            />
+        <BackgroundImg ImageNum={1} Blur={false}/>
+          <div className={styles.ContainerInput}>
+                <InputText
+                    placeholderInput="Saisir le code ici"
+                />
+          </div >
+      <div className={styles.imagePage7}>
+          {/* <ReactFlashlight> */}
+            <div className={styles.imagePage7} style={style}>
+            </div>
+          {/* </ReactFlashlight> */}
           </div>
-        {/* </ReactFlashlight> */}
-        </div>
-        <div className={styles.boutonSuivantPage7}>
-        <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code, voir la suite ->" link="" /></Link >
-        </div>
+          <div className={styles.boutonSuivantPage7}>
+          <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code, voir la suite ->" link="" /></Link >
+          </div>
+      </div>
     </div>
   );
 };

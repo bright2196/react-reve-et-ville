@@ -11,10 +11,7 @@ class BoxText extends React.Component {
                 <p className={styles.corpsBoxText}>{this.props.textBoxContenu}</p>
             </div>
     
-      </div>
-   
-     
-      
+      </div> 
     );
   }
 }

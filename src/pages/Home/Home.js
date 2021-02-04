@@ -4,9 +4,12 @@ import React from 'react'
 import Link from '../../components/Link/Link'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import BackgroundImage from '../../components/BackgroundImage/BackgroundImage'
+import Header from '../../components/Header/Header'
 
 const Home = () => {
   return (
+      <div>
+        <Header colorIcones={false}/>
         <div className={[styles.titlescreen, styles.animFadeIn].join(' ')}>
             <BackgroundImage ImageNum={0} Blur={false} GreyColor={true} BrownColor={false}/>
             <div className={styles.title}>
@@ -26,6 +29,7 @@ const Home = () => {
               <svg xmlns="http://www.w3.org/2000/svg" width="100" height="1" viewBox="0 0 100 1"><defs><style></style></defs><line className="a" x1="100" transform="translate(0 0.5)"/></svg>
             </div>
           </div>
+      </div>
   );
 };
 
