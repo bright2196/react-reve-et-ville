@@ -13,7 +13,7 @@ const Page1Carte = () => {
         <div className={styles.containerCarteImage}>
             <img className={styles.imageCarte} src={Carte} alt="Carte de Bordeaux"/>
             <div className={styles.divProvisoire}>
-              <Link href="pageMusee" ><NormalButton buttonText="J'ai trouvé l'emplacement je passe a la suite ->" link="" /></Link >
+              <Link href="pageMusee" ><NormalButton buttonText="J'ai trouvé l'emplacement. Je passe a la suite. ->" link="" /></Link >
             </div>
         </div>
     </div>

@@ -17,7 +17,7 @@ const Page3NatureMorte = () => {
       />
       <div className={styles.divProvisoire}>
       <Link href="pageLoupe" >
-        <NormalButton buttonText="Je veux aller a la loupe, voir la suite ->" link="" />
+        <NormalButton buttonText="Je veux aller à la loupe, voir la suite ->" link="" />
       </Link >
       </div>
     </div>
