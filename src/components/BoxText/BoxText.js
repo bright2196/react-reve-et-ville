@@ -3,21 +3,14 @@ import styles from './BoxText.module.scss';
 import PropTypes from 'prop-types';
 import Typewriter from 'typewriter-effect';
 
-// const [written, setwritten] = useState(false);
-
 class BoxText extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      written: false
-    };
-  }
   render() {
     return (
     <div id="app" className= {styles.ContainerBox}>
             <div className= {styles.Containertext}>
                 <label className={styles.namePerso}>
-                  <Typewriter
+                  {this.props.namePerso}
+                  {/* <Typewriter
                     options={{
                       delay: 20,
                       cursorClassName: 'Cursor-BoxTex',
@@ -27,31 +20,29 @@ class BoxText extends React.Component {
                         .typeString(this.props.namePerso)
                         .callFunction(() => {
                           document.getElementsByClassName('Cursor-BoxTex')[0].style.display = "none";
-                          // console.log(cursorlist)
-                          this.setState({ written: true })
                         })
                         .start();
                     })}
-                  />
+                  /> */}
                 </label>
                 <p className={styles.corpsBoxText}>
-                  {this.state.written &&
-                    <Typewriter
-                      options={{
-                        delay: 20,
-                        cursorClassName: 'Cursor-BoxTex2',
-                      }}
-                      onInit={(typewriter) => {
-                        typewriter
-                          .typeString(this.props.textBoxContenu)
-                          .callFunction(() => {
-                            document.getElementsByClassName('Cursor-BoxTex2')[0].style.display = "none";
-                            // console.log(cursorlist)
-                          })
-                          .start();
-                      }}
-                    />
-                  }
+                  {this.props.textBoxContenu}
+                  {/* <Typewriter
+                    options={{
+                      delay: 20,
+                      cursorClassName: 'Cursor-BoxTex2',
+                    }}
+                    onInit={(typewriter) => {
+                      typewriter
+                        .pauseFor(500)
+                        .typeString(this.props.textBoxContenu)
+                        .callFunction(() => {
+                          document.getElementsByClassName('Cursor-BoxTex2')[0].style.display = "none";
+                          // console.log(cursorlist)
+                        })
+                        .start();
+                    }}
+                  /> */}
                 </p>
                 
             </div>
