@@ -25,7 +25,7 @@ const Page7Suie = () => {
           textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
           namePerso="Vous"
           />
-      <BackgroundImg ImageNum={1} Blur={true}/>
+      <BackgroundImg ImageNum={1} Blur={false}/>
         <div className={styles.ContainerInput}>
               <InputText
                   placeholderInput="Saisir le code ici"

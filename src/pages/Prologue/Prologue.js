@@ -8,7 +8,7 @@ import image from "../../img/scratchpaper.png"
 const Prologue = () => {
   return (
     <div className={styles.containerPrologue}>
-      <BackgroundImg ImageNum={0} Blur={true}/>
+      <BackgroundImg ImageNum={0} Blur={false}/>
       <p className={styles.desc}>
       Mon grand-père est décédé il y a quelques semaines maintenant. Parmi les affaires qu'il a légué, j'ai hérité d'un vieux carnet de croquis dont je n'ai jamais entendu parler. Il faut dire que je le connaissais peu. C'est curieux, les initiales ne sont même pas les bonnes…
       <br/><br/>

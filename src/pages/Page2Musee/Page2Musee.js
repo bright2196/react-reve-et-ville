@@ -13,7 +13,7 @@ const Page2Musee = () => {
           textBoxContenu="Le regard du cavalier te guidera... Qu’est ce que cela veut bien pouvoir dire ?"
           namePerso="Vous"
           />
-      <BackgroundImg ImageNum={0} Blur={true}/>
+      <BackgroundImg ImageNum={0} Blur={false}/>
        <div className={styles.containerTextMusee}>
         <Link href="pageNatureMorte">
                   <NormalButton

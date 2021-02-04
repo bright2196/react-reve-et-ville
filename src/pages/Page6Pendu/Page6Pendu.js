@@ -24,7 +24,7 @@ class Page6Pendu extends React.Component {
 
     return (
       <div className={styles.containerPage6Pendu}>
-        <BackgroundImg Blur={true} ImageNum='1'/>
+        <BackgroundImg Blur={false} ImageNum='1'/>
         {
           win?
           (
@@ -42,7 +42,7 @@ class Page6Pendu extends React.Component {
           )
           :
           (
-            <div >
+            <div className={styles.vignets} >
               <img src={note1} className={styles.img} alt=""/>
               <div className={styles.btnContainer}>
                 <BoxText textBoxContenu="C'est treize ? Ques qu'il a voulu dire ? Quel est le mot secret?" namePerso="Vous" />
