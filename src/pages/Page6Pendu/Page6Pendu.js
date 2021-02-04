@@ -1,5 +1,5 @@
 import styles from "./Page6Pendu.module.scss";
-import React,{ useState } from 'react'
+import React from 'react'
 import Link from '../../components/Link/Link'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import BoxText from "../../components/BoxText/BoxText";
