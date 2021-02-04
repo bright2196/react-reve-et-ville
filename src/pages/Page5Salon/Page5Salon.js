@@ -20,24 +20,30 @@ class Page5Salon extends React.Component {
   render() {
     const { findTableau } = this.state
     return (
-      <div className={styles.containerPage5Salon}>
+      <div>
         <BackgroundImg ImageNum={0} Blur={true}/>
         {
           findTableau?
           (
-            <div>
-              <img src={TableauImagEdit} alt="" />
+            <div className={styles.containerPage5Salon}>
+        <Link href="pageSuie" ><NormalButton buttonText="J'ai identifié le tableau intru, voir la suite ->" link="" /></Link >
+                <img src={TableauImagEdit} alt="" />
+
             </div>
           )
           :
           (
-            <div>
-              <img src={TableauImag} alt="" />
-              <BoxText textBoxContenu="Je crois qu'on a enfin trouvé le tableau correspondant ! Aux côtés de son fidèle chien évidemment ! C’est une peinture de mon grand-père dans son salon. C’est étrange… Dans mes souvenirs, l’un des tableaux était différent…" namePerso="Vous" />
-            </div>
+             <div className={styles.containerPage5Salon}>
+
+               <Link href="pageSuie" ><NormalButton buttonText="J'ai identifié le tableau intru, voir la suite ->" link="" /></Link >
+                <BoxText textBoxContenu="Je crois qu'on a enfin trouvé le tableau correspondant ! Aux côtés de son fidèle chien évidemment ! C’est une peinture de mon grand-père dans son salon. C’est étrange… Dans mes souvenirs, l’un des tableaux était différent…" 
+                  namePerso="Vous" 
+                />
+                <img src={TableauImag} alt="" />
+
+                </div>
           )
         }
-        <Link href="pageSuie" ><NormalButton buttonText="J'ai identifié le tableau intru, voir la suite ->" link="" /></Link >
       </div>
     );
   }
