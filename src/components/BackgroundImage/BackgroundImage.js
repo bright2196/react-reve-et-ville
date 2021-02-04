@@ -33,7 +33,9 @@ class BackgroundImage extends React.Component {
             blur: this.props.Blur,
           });
         return (
-            <div className={className} style={{backgroundImage: `url(${ImageLink})`}}>
+            <div className={styles.BackgroundImageContainer}>
+                <div className={className} style={{backgroundImage: `url(${ImageLink})`}}>
+                </div>
             </div>
         );
     }
@@ -41,9 +43,8 @@ class BackgroundImage extends React.Component {
 
 
 BackgroundImage.propTypes = {
-    Src: PropTypes.string,
     Blur: PropTypes.bool,
-    Alt: PropTypes.string,
+    ImageNum: PropTypes.number,
 
   }
   export default BackgroundImage;

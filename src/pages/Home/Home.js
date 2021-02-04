@@ -3,10 +3,12 @@ import styles from "./Home.module.scss";
 import React from 'react'
 import Link from '../../components/Link/Link'
 import NormalButton from "../../components/NormalButton/NormalButton";
+import BackgroundImage from '../../components/BackgroundImage/BackgroundImage'
 
 const Home = () => {
   return (
         <div className={styles.titlescreen}>
+            <BackgroundImage ImageNum={0} Blur={true}/>
             <div className={styles.title}>
               <h1>L'amour de l'art</h1>
               <p className={styles.homedesc}>Lancez vous dans une course aux indices et plongez vous dans les toiles du Musée des Beaux Arts de Bordeaux pour mettre au jour un secret bien gardé.</p>
