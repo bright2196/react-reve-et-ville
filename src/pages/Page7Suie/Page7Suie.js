@@ -5,6 +5,18 @@ import BoxText from "../../components/BoxText/BoxText";
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
 import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
+import { ReactFlashlight } from "react-flashlight";
+import imgPage7 from "./img/tableauPage7.jpg";
+
+
+const style = {
+  backgroundImage: `url(${imgPage7})`,
+  height: "50vh",
+  width: "50vw",
+  backgroundRepeat: "no-repeat",
+  backgroundAttachment: "fixed",
+  backgroundSize: "cover",
+} 
 
 const Page7Suie = () => {
   return (
@@ -19,9 +31,15 @@ const Page7Suie = () => {
                   placeholderInput="Saisir le code ici"
               />
         </div >
-        <div classname={styles.imgPage7}>
-        <div classname={styles.focusPage7} id="focus"/>
+    <div className={styles.imagePage7}>
+        <ReactFlashlight
+        
+        showCursor={"50px"}>
+          <div style={style}>
+           
           </div>
+        </ReactFlashlight>
+        </div>
         <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code, voir la suite ->" link="" /></Link >
         
     </div>

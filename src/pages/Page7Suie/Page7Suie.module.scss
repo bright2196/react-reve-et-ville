@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    min-height: 100vh;
     margin:0;
     padding:0;
 }
@@ -14,15 +15,11 @@
 }
 
 
-
-
-
-
-
 .ContainerBoxText {
     margin-top: 10px;
 }
 
-.imgPage7 {
-    background-image: url(./img/tableauPage7.jpg);
+.imagePage7 {
+    display: flex;
+    margin: 20px;
 }
