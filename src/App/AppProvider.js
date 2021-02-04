@@ -2,6 +2,7 @@ import React, {createContext, useState} from 'react'
 export const AppContext = createContext({})
 
 const AppProvider = ({children}) => {
+    // const [currentPage, setCurrentPage] = useState('pageGravurePoussiere')
     const [currentPage, setCurrentPage] = useState('home')
     const states = {
         currentPage, 
