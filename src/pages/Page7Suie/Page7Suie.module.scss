@@ -18,9 +18,28 @@
 
 .imagePage7 {
     display: flex;
-
+    width: 800px;
+    height: 600px;
+    background-image: url(./img/tableauPage7.jpg);
+    background-size: 100%;
+    background-position: center;
+    box-sizing: border-box; 
    
 }
+
+
+.focusPage7 {
+    box-sizing: border-box;
+    position: fixed;
+    background-size: cover;
+    position:absolute;
+    width:800px;
+    height:600px;
+    background: -webkit-radial-gradient(100px 100px, circle contain, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.97)) center center;
+    display: flex;
+
+ }
+
 
 .boutonSuivantPage7 {
     margin-top: 17vh;
