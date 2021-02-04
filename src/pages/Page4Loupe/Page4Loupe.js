@@ -10,14 +10,15 @@ import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 const Page4Loupe = () => {
   return (
     <div className={styles.containerPage4Loupe}>
+      <BoxText
+        namePerso="Vous"
+        textBoxContenu="Une page secrète ! Jetons un œil au carnet pour la trouver et découvrir ce qu'elle contient."
+      />
+      <Link href="pagePendu" ><NormalButton buttonText="J'ai trouver la page du carnet, voir la suite ->" link="" /></Link >
+
       <BackgroundImg ImageNum={0} Blur={true}/>
       <img src={tableau4} alt="Tableau 4" />
 
-        <BoxText
-          namePerso="Vous"
-          textBoxContenu="Une page secrète ! Jetons un œil au carnet pour la trouver et découvrir ce qu'elle contient."
-        />
-        <Link href="pagePendu" ><NormalButton buttonText="J'ai trouver la page du carnet, voir la suite ->" link="" /></Link >
 
     </div>
   );

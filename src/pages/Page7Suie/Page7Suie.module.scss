@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    margin:0;
+    padding:0;
 }
 
 
@@ -13,17 +15,14 @@
 
 
 
-.ContainerImage {
-  
-    display: flex;
-    justify-content: center;
-    
-}
 
-.ImagePage7 {
-    width: 65%;
-}
+
+
 
 .ContainerBoxText {
     margin-top: 10px;
+}
+
+.imgPage7 {
+    background-image: url(./img/tableauPage7.jpg);
 }
