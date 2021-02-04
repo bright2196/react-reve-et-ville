@@ -32,10 +32,15 @@ class BackgroundImage extends React.Component {
             Image: true,
             blur: this.props.Blur,
           });
+        let classNameColor = cx({
+            GreyColor: this.props.GreyColor,
+            BrownColor: this.props.BrownColor,
+            divColor: true,
+        });
         return (
             <div className={styles.BackgroundImageContainer}>
-                <div className={className} style={{backgroundImage: `url(${ImageLink})`}}>
-                </div>
+                <div className={className} style={{backgroundImage: `url(${ImageLink})`}}></div>
+                <div className={classNameColor} ></div>
             </div>
         );
     }
@@ -44,7 +49,8 @@ class BackgroundImage extends React.Component {
 
 BackgroundImage.propTypes = {
     Blur: PropTypes.bool,
+    GreyColor: PropTypes.bool,
+    BrownColor: PropTypes.bool,
     ImageNum: PropTypes.number,
-
   }
   export default BackgroundImage;

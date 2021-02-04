@@ -4,12 +4,13 @@ import BoxText from '../../components/BoxText/BoxText';
 import tableau4 from '../../img/tableau4.jpg';
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
+import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 
 
 const Page4Loupe = () => {
   return (
     <div className={styles.containerPage4Loupe}>
-
+      <BackgroundImg ImageNum={0} Blur={true}/>
       <img src={tableau4} alt="Tableau 4" />
 
         <BoxText

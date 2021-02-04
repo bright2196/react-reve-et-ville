@@ -3,7 +3,7 @@ import React from 'react'
 import Link from '../../components/Link/Link'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import BoxText from "../../components/BoxText/BoxText";
-// import BackgroundImg from "../../components/BackgroundImage/BackgroundImage"
+import BackgroundImg from "../../components/BackgroundImage/BackgroundImage"
 
 // Img
 import note1 from '../../img/pendu/noteTableaux.png'
@@ -24,6 +24,7 @@ class Page6Pendu extends React.Component {
 
     return (
       <div className={styles.containerPage6Pendu}>
+        <BackgroundImg Blur={true} ImageNum=''/>
         {
           win?
           (
