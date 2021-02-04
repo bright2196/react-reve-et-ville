@@ -9,7 +9,7 @@ const Page8Transition = () => {
     <div className={styles.containerPage8Transition}>
        <BackgroundImg ImageNum={0} Blur={false}/>
         <div className={styles.containerPage8Transition}>
-          <Link href="pageGravurePoussiere" ><NormalButton buttonText="J'ai lue le texte de transition, voir la suite ->" link="" /></Link >
+          <Link href="pageGravurePoussiere" ><NormalButton buttonText="J'ai lu le texte de transition, voir la suite ->" link="" /></Link >
             
         </div>
     </div>

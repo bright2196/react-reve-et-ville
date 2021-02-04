@@ -26,7 +26,7 @@ class Page5Salon extends React.Component {
           findTableau?
           (
             <div className={styles.containerPage5Salon}>
-            <Link href="pageSuie" ><NormalButton buttonText="J'ai identifié le tableau intru, voir la suite ->" link="" /></Link >
+            <Link href="pageSuie" ><NormalButton buttonText="J'ai identifié le tableau intrus, voir la suite ->" link="" /></Link >
               <img src={TableauImagEdit} alt="" />
 
             </div>

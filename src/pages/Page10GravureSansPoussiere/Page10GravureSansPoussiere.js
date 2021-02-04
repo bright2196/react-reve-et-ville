@@ -9,7 +9,7 @@ const Page10GravureSansPoussiere = () => {
     <div className={styles.containerPage10GravureSansPoussiere}>
       <BackgroundImg ImageNum={0} Blur={false}/>
       Page10GravureSansPoussiere
-      <Link href="pageGrandMere" ><NormalButton buttonText="J'ai vue ma grand mère avec le peinceau, voir la suite ->" link="" /></Link >
+      <Link href="pageGrandMere" ><NormalButton buttonText="J'ai vu ma grand mère avec le pinceau, voir la suite ->" link="" /></Link >
     </div>
   );
 };

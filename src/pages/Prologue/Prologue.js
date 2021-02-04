@@ -3,7 +3,7 @@ import React from 'react'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link';
 import BackgroundImg from '../../components/BackgroundImage/BackgroundImage';
-import image from "../../img/scratchpaper.png";
+import image from "../../img/pendu/NoteEnigme.png";
 import BoxText from '../../components/BoxText/BoxText';
 
 
@@ -12,7 +12,7 @@ const Prologue = () => {
     <div className={styles.containerPrologue}>
       <BoxText
         namePerso="Vous"
-        textBoxContenu="Mmmh, je pense que cela me servira plus tard. Je devrais conserver cette note !"
+        textBoxContenu="Mmmh, je pense que cela me servira plus tard. Je vrais conserver cette note !"
       />
       <BackgroundImg ImageNum={0} Blur={false}/>
       <Link href="pageCarte" ><NormalButton buttonText="voir la suite ->" link="" /></Link >
@@ -24,7 +24,7 @@ const Prologue = () => {
 
       <div className={styles.scracthpaper}>
         <img className={styles.Imagecitation} src={image}  alt="Scratched Paper" />
-        <p className={styles.citation}>Le regard du cavalier te guidera.</p>
+        {/* <p className={styles.citation}>Le regard du cavalier te guidera.</p> */}
       </div>
 
     </div>

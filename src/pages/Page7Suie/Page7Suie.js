@@ -35,7 +35,6 @@ const Page7Suie = () => {
     <div className={styles.imagePage7}>
         <ReactFlashlight>
           <div className={styles.imagePage7} style={style}>
-           c
           </div>
         </ReactFlashlight>
         </div>

@@ -16,7 +16,7 @@ const Page11GrandMere = () => {
       />
       <img src={grandMere} className={styles.tableau} alt="Grand-mère peint"/>
       <div className={styles.divProvisoire}>
-        <Link href="pageFinal" ><NormalButton buttonText="J'ai lue les lettres, voir la suite ->"/></Link>
+        <Link href="pageFinal" ><NormalButton buttonText="J'ai lu les lettres, voir la suite ->"/></Link>
       </div>
     </div>
   );
