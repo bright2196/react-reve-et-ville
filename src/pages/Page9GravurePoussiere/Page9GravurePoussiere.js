@@ -1,5 +1,5 @@
 import styles from "./Page9GravurePoussiere.module.scss";
-import React from 'react'
+import React, { useEffect } from 'react'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
 import BackgroundImage from '../../components/BackgroundImage/BackgroundImage';
@@ -9,6 +9,8 @@ import Header from '../../components/Header/Header'
 
 
 const Page9GravurePoussiere = () => {
+  
+  
   return (
     <div>
       <Header colorIcones={true}/>
