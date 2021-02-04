@@ -3,7 +3,7 @@ import React,{ useState } from 'react'
 import Link from '../../components/Link/Link'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import BoxText from "../../components/BoxText/BoxText";
-import BackgroundImg from "../../components/BackgroundImage/BackgroundImage"
+// import BackgroundImg from "../../components/BackgroundImage/BackgroundImage"
 
 // Img
 import note1 from '../../img/pendu/noteTableaux.png'
@@ -28,7 +28,7 @@ class Page6Pendu extends React.Component {
           win?
           (
               <div>
-                <img src={noteWin} className={styles.img}/>
+                <img src={noteWin} className={styles.img} alt=""/>
                 <BoxText textBoxContenu='Super ! Le mot secret etais "Tableaux" ! Et il doit donc y en avoir treize... De plus qui est ce  fidèle compagnon ? 
                 Quel tableau pourrait correspondre  à cette description ?' namePerso="Vous" />
                 <div className={styles.btnContainer}><div className={styles.btn}><Link href="pageSalon" ><NormalButton buttonText="Voyons ou cela nous mène ..." link="" /></Link ></div></div>
@@ -37,7 +37,7 @@ class Page6Pendu extends React.Component {
           :
           (
             <div >
-              <img src={note1} className={styles.img}/>
+              <img src={note1} className={styles.img} alt=""/>
               <div className={styles.btnContainer}>
                 <div onClick={() => {
                   const motJoueur = prompt('Quel est le mot secret ?')
