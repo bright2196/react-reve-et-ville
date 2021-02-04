@@ -33,10 +33,10 @@ const Page7Suie = () => {
               />
         </div >
     <div className={styles.imagePage7}>
-        <ReactFlashlight>
+        {/* <ReactFlashlight> */}
           <div className={styles.imagePage7} style={style}>
           </div>
-        </ReactFlashlight>
+        {/* </ReactFlashlight> */}
         </div>
         <div className={styles.boutonSuivantPage7}>
         <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code, voir la suite ->" link="" /></Link >

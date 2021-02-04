@@ -4,6 +4,7 @@ import Link from '../../components/Link/Link'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import BoxText from "../../components/BoxText/BoxText";
 import BackgroundImg from "../../components/BackgroundImage/BackgroundImage"
+import animG from "../../index.scss"
 
 // Img
 import note1 from '../../img/pendu/noteTableaux.png'
@@ -28,7 +29,7 @@ class Page6Pendu extends React.Component {
         {
           win?
           (
-              <div>
+              <div className={styles.animFadeIn}>
                 <div>
                   <img src={noteWin} className={styles.img} alt=""/>
                   <div className={styles.btnContainer}>
@@ -42,7 +43,7 @@ class Page6Pendu extends React.Component {
           )
           :
           (
-            <div className={styles.vignets} >
+            <div className={styles.animFadeIn} >
               <img src={note1} className={styles.img} alt=""/>
               <div className={styles.btnContainer}>
                 <BoxText textBoxContenu="'Ses treize _ _ _ _ _ _ _ _ ? ' Qu'est-ce qu'il a voulu dire ? Quel est le mot secret?" namePerso="Vous" />
@@ -53,7 +54,7 @@ class Page6Pendu extends React.Component {
                     console.log('tableaux a bien ete trouvé ')
                   }
                   }} className={styles.btn}>
-                  <NormalButton buttonText="Faire un essais" link="" />
+                  <NormalButton buttonText="Faire un essai" link="" />
                 </div>
               </div>
             </div>

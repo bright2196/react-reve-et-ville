@@ -7,7 +7,7 @@ import BackgroundImage from '../../components/BackgroundImage/BackgroundImage'
 
 const Home = () => {
   return (
-        <div className={styles.titlescreen}>
+        <div className={[styles.titlescreen, styles.animFadeIn].join(' ')}>
             <BackgroundImage ImageNum={0} Blur={false} GreyColor={true} BrownColor={false}/>
             <div className={styles.title}>
               <h1>L'amour de l'art</h1>
@@ -25,7 +25,7 @@ const Home = () => {
               </Link>        
               <svg xmlns="http://www.w3.org/2000/svg" width="100" height="1" viewBox="0 0 100 1"><defs><style></style></defs><line className="a" x1="100" transform="translate(0 0.5)"/></svg>
             </div>
-        </div>
+          </div>
   );
 };
 
