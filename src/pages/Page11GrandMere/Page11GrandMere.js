@@ -14,8 +14,10 @@ const Page11GrandMere = () => {
         namePerso="Vous"
         textBoxContenu="Ma grand-mère ! Et elle peint !"
       />
-      <Link href="pageFinal" ><NormalButton buttonText="J'ai lue les lettres, voir la suite ->"/></Link>
-      <img src={grandMere} alt="Grand-mère peint"/>
+      <img src={grandMere} className={styles.tableau} alt="Grand-mère peint"/>
+      <div className={styles.divProvisoire}>
+        <Link href="pageFinal" ><NormalButton buttonText="J'ai lu les lettres, voir la suite ->"/></Link>
+      </div>
     </div>
   );
 };
