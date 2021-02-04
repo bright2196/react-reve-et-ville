@@ -42,7 +42,7 @@ class Page6Pendu extends React.Component {
           )
           :
           (
-            <div >
+            <div className={styles.vignets} >
               <img src={note1} className={styles.img} alt=""/>
               <div className={styles.btnContainer}>
                 <BoxText textBoxContenu="C'est treize ? Ques qu'il a voulu dire ? Quel est le mot secret?" namePerso="Vous" />
