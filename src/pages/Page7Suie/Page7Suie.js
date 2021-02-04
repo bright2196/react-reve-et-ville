@@ -1,7 +1,6 @@
 import styles from "./Page7Suie.module.scss";
 import React from 'react'
 import InputText from "../../components/InputCode/InputCode";
-import imagePage7 from "./img/tableauPage7.jpg"
 import BoxText from "../../components/BoxText/BoxText";
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
@@ -16,9 +15,9 @@ const Page7Suie = () => {
                   placeholderInput="Saisir le code ici"
               />
         </div >
-        <div className={styles.ContainerImage}>
-            <img className={styles.ImagePage7} src={imagePage7} alt=""/>
-        </div>
+        <div classname={styles.imgPage7}>
+        <div classname={styles.focusPage7} id="focus"/>
+          </div>
 
         <div className={styles.ContainerBoxText}>
             <BoxText
@@ -27,6 +26,7 @@ const Page7Suie = () => {
             />
         </div>
         <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code, voir la suite ->" link="" /></Link >
+        
     </div>
   );
 };
