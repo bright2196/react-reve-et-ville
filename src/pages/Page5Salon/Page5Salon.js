@@ -26,13 +26,13 @@ class Page5Salon extends React.Component {
           findTableau?
           (
             <div>
-              <img src={TableauImagEdit}/>
+              <img src={TableauImagEdit} alt="" />
             </div>
           )
           :
           (
             <div>
-              <img src={TableauImag}/>
+              <img src={TableauImag} alt="" />
               <BoxText textBoxContenu="Je crois qu'on a enfin trouvé le tableau correspondant ! Aux côtés de son fidèle chien évidemment ! C’est une peinture de mon grand-père dans son salon. C’est étrange… Dans mes souvenirs, l’un des tableaux était différent…" namePerso="Vous" />
             </div>
           )
