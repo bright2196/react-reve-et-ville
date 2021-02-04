@@ -9,6 +9,7 @@ import Link from '../../components/Link/Link'
 const Page4Loupe = () => {
   return (
     <div className={styles.containerPage4Loupe}>
+      <Link href="pagePendu" ><NormalButton buttonText="J'ai trouver la page du carnet, voir la suite ->" link="" /></Link >
 
       <img src={tableau4} alt="Tableau 4" />
 
@@ -16,7 +17,6 @@ const Page4Loupe = () => {
           namePerso="Vous"
           textBoxContenu="Une page secrète ! Jetons un œil au carnet pour la trouver et découvrir ce qu'elle contient."
         />
-        <Link href="pagePendu" ><NormalButton buttonText="J'ai trouver la page du carnet, voir la suite ->" link="" /></Link >
 
     </div>
   );

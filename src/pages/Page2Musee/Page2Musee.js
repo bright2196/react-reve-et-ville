@@ -8,6 +8,10 @@ import Link from '../../components/Link/Link'
 const Page2Musee = () => {
   return (
     <div className={styles.containerPage2Musee}>
+          <BoxText
+          textBoxContenu="Le regard du cavalier te guidera... Qu’est ce que cela veut bien pouvoir dire ?"
+          namePerso="Vous"
+          />
        <div className={styles.containerTextMusee}>
         <Link href="pageNatureMorte">
                   <NormalButton
@@ -15,10 +19,6 @@ const Page2Musee = () => {
                       link=""
                   />
                 </Link >
-          <BoxText
-          textBoxContenu="Le regard du cavalier te guidera... Qu’est ce que cela veut bien pouvoir dire ?"
-          namePerso="Vous"
-          />
         
        </div>
     </div>

@@ -9,6 +9,10 @@ import Link from '../../components/Link/Link'
 const Page7Suie = () => {
   return (
     <div className={styles.containerPage7Suie}>
+          <BoxText
+          textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
+          namePerso="Vous"
+          />
         <div className={styles.ContainerInput}>
               <InputText
                   placeholderInput="Saisir le code ici"
@@ -16,13 +20,6 @@ const Page7Suie = () => {
         </div >
         <div className={styles.ContainerImage}>
             <img className={styles.ImagePage7} src={imagePage7} alt=""/>
-        </div>
-
-        <div className={styles.ContainerBoxText}>
-            <BoxText
-            textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
-            namePerso="Vous"
-            />
         </div>
         <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code, voir la suite ->" link="" /></Link >
     </div>
