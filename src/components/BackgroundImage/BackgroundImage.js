@@ -52,4 +52,5 @@ BackgroundImage.propTypes = {
     BrownColor: PropTypes.bool,
     ImageNum: PropTypes.number,
   }
-  export default BackgroundImage;
+  
+export default BackgroundImage;
