@@ -16,7 +16,7 @@ const Page4Loupe = () => {
       />
       <Link href="pagePendu" ><NormalButton buttonText="J'ai trouver la page du carnet, voir la suite ->" link="" /></Link >
 
-      <BackgroundImg ImageNum={0} Blur={true}/>
+      <BackgroundImg ImageNum={2} Blur={true}/>
       <img src={tableau4} alt="Tableau 4" />
 
 

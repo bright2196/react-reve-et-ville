@@ -7,7 +7,7 @@ import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 const Tutoriel = () => {
   return (
     <div className={styles.containerTutoriel}>
-      <BackgroundImg ImageNum={0} Blur={true}/>
+      <BackgroundImg ImageNum={0} Blur={false}/>
       <p className={styles.tutorielText}>Déplacez votre curseur sur les pages du carnet et sur les tableaux. 
           Soyez attentifs aux détails et n'hésitez pas à fouiller! 
           Résolvez le mystère de ce carnet…</p>

@@ -1,5 +1,5 @@
 .blur{
-    filter: blur(2px);
+    filter: blur(10px);
 }
 .Image{
     height: 100%;
@@ -27,7 +27,7 @@
 .GreyColor{
     background-color: #D9D1CC;
     opacity: 0.08;
-    filter: blur(1px) brightness(24%);
+    filter: blur(10px) brightness(24%);
 }
 .divColor{
     position: absolute;
