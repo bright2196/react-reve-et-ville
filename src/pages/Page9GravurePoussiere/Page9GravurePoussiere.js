@@ -2,7 +2,7 @@ import styles from "./Page9GravurePoussiere.module.scss";
 import React from 'react'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
-import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
+import BackgroundImage from '../../components/BackgroundImage/BackgroundImage';
 
 const Page9GravurePoussiere = () => {
   return (
