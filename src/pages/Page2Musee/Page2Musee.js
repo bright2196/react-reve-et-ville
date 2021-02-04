@@ -4,10 +4,12 @@ import React from 'react'
 import BoxText from "../../components/BoxText/BoxText";
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
+import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 
 const Page2Musee = () => {
   return (
     <div className={styles.containerPage2Musee}>
+      <BackgroundImg ImageNum={0} Blur={true}/>
        <div className={styles.containerTextMusee}>
         <Link href="pageNatureMorte">
                   <NormalButton
