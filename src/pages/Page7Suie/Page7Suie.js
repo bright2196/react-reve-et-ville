@@ -11,11 +11,12 @@ import imgPage7 from "./img/tableauPage7.jpg";
 
 const style = {
   backgroundImage: `url(${imgPage7})`,
-  height: "50vh",
+  height: "60vh",
   width: "50vw",
   backgroundRepeat: "no-repeat",
   backgroundAttachment: "fixed",
-  backgroundSize: "cover",
+  backgroundSize: "50%",
+  backgroundPosition: "center",
 } 
 
 const Page7Suie = () => {
@@ -34,14 +35,15 @@ const Page7Suie = () => {
     <div className={styles.imagePage7}>
         <ReactFlashlight
         
-        showCursor={"50px"}>
-          <div style={style}>
+        showCursor={false}>
+          <div className={styles.imagePage7} style={style}>
            
           </div>
         </ReactFlashlight>
         </div>
+        <div className={styles.boutonSuivantPage7}>
         <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code, voir la suite ->" link="" /></Link >
-        
+        </div>
     </div>
   );
 };
