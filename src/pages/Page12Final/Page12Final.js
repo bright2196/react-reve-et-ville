@@ -25,7 +25,7 @@ class Page12Final extends React.Component {
         {
           goNext === 0?
           (
-            <BoxText textBoxContenu='Je te félicite. Tu viens de découvrir l’un des secrets les mieux gardé par notre famille. Si tu lis cette lettre, c’est probablement que tu as réussi 
+            <BoxText textBoxContenu='Je te félicite. Tu viens de découvrir l’un des secrets les mieux gardés par notre famille. Si tu lis cette lettre, c’est probablement que tu as réussi 
           à résoudre toutes les énigmes que ta grand-mère a disséminé tout au long de ses travaux... '></BoxText>
           )
           :
@@ -50,7 +50,7 @@ class Page12Final extends React.Component {
                 :
                 (
                   <div className={styles.boutonSuivantPage12}>
-                    <Link href="home" ><NormalButton buttonText="C'est le final, retour a l'acceuil ->" link="" /></Link >
+                    <Link href="home" ><NormalButton buttonText="C'est le final, retour a l'accueil ->" link="" /></Link >
                   </div>
                 )  
               ) 

@@ -18,7 +18,7 @@ const Page2Musee = () => {
       <div className={styles.divProvisoire}>
         <Link href="pageNatureMorte">
           <NormalButton
-            buttonText="J'ai cliqué sur le tableaux de la nature morte, je passe a la suite ->"
+            buttonText="J'ai cliqué sur le tableaux de la nature morte, je passe à la suite ->"
           />
         </Link>
       </div>
