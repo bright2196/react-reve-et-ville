@@ -7,7 +7,7 @@ import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 const Page10GravureSansPoussiere = () => {
   return (
     <div className={styles.containerPage10GravureSansPoussiere}>
-      <BackgroundImg ImageNum={0} Blur={true}/>
+      <BackgroundImg ImageNum={0} Blur={false}/>
       Page10GravureSansPoussiere
       <Link href="pageGrandMere" ><NormalButton buttonText="J'ai vue ma grand mère avec le peinceau, voir la suite ->" link="" /></Link >
     </div>
