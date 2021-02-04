@@ -7,7 +7,7 @@ import Link from '../../components/Link/Link'
 const Page3NatureMorte = () => {
   return (
     <div className={styles.containerPage3NatureMorte}>
-      <BackgroundImg ImageNum={0} Blur={true}/>
+      <BackgroundImg ImageNum={0} Blur={false}/>
       <Link href="pageLoupe" ><NormalButton buttonText="Je veux aller a la loupe, voir la suite ->" link="" /></Link >
     </div>
   );

@@ -7,7 +7,7 @@ import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 const Page5Salon = () => {
   return (
     <div className={styles.containerPage5Salon}>
-      <BackgroundImg ImageNum={0} Blur={true}/>
+      <BackgroundImg ImageNum={0} Blur={false}/>
       <Link href="pageSuie" ><NormalButton buttonText="J'ai identifié le tableau intru, voir la suite ->" link="" /></Link >
     </div>
   );

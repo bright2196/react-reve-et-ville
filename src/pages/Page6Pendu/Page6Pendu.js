@@ -24,7 +24,7 @@ class Page6Pendu extends React.Component {
 
     return (
       <div className={styles.containerPage6Pendu}>
-        <BackgroundImg Blur={true} ImageNum='1'/>
+        <BackgroundImg Blur={false} ImageNum='1'/>
         {
           win?
           (
