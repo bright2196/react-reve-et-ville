@@ -9,7 +9,7 @@ import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 const Page1Carte = () => {
   return (
     <div className={styles.containerPage1Carte}>
-       <BackgroundImg ImageNum={0} Blur={false}/>
+       <BackgroundImg ImageNum={0} Blur={false} BrownColor={true}/>
         <div className={styles.containerCarteImage}>
             <img className={styles.imageCarte} src={Carte} alt="Carte de Bordeaux"/>
             <Link href="pageMusee" ><NormalButton buttonText="J'ai trouvé l'emplacement je passe a la suite ->" link="" /></Link >
