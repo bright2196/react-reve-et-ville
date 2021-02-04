@@ -33,7 +33,8 @@ class BackgroundImage extends React.Component {
             blur: this.props.Blur,
           });
         let classNameColor = cx({
-            color: this.props.Color,
+            GreyColor: this.props.GreyColor,
+            BrownColor: this.props.BrownColor,
             divColor: true,
         });
         return (
@@ -48,7 +49,8 @@ class BackgroundImage extends React.Component {
 
 BackgroundImage.propTypes = {
     Blur: PropTypes.bool,
-    Color: PropTypes.bool,
+    GreyColor: PropTypes.bool,
+    BrownColor: PropTypes.bool,
     ImageNum: PropTypes.number,
   }
   export default BackgroundImage;
