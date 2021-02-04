@@ -1,6 +1,6 @@
 .ContainerBox {
     width: 87vw;
-    height: 16vh;
+    height: 14vh;
     display: flex;
     margin: 20px;
     position: absolute;
@@ -9,8 +9,9 @@
     border: double RGBA(217,209,204,0.68);
     border-radius: 12px;
     align-items: flex-end;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     align-items: center;
+    z-index: 1000;
 }
 
 

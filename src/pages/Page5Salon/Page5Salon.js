@@ -35,10 +35,11 @@ class Page5Salon extends React.Component {
           (
              <div className={styles.containerPage5Salon}>
 
-               <Link href="pageSuie" ><NormalButton buttonText="J'ai identifié le tableau intru, voir la suite ->" link="" /></Link >
+               
                 <BoxText textBoxContenu="Je crois qu'on a enfin trouvé le tableau correspondant ! Aux côtés de son fidèle chien évidemment ! C’est une peinture de mon grand-père dans son salon. C’est étrange… Dans mes souvenirs, l’un des tableaux était différent…" 
                   namePerso="Vous" 
                 />
+                <Link href="pageSuie" ><NormalButton buttonText="J'ai identifié le tableau intru, voir la suite ->" link="" /></Link >
                 <img src={TableauImag} alt="" />
 
                 </div>
