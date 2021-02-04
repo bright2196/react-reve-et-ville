@@ -12,7 +12,7 @@ const Prologue = () => {
     <div className={styles.containerPrologue}>
       <BoxText
         namePerso="Vous"
-        textBoxContenu="Mmmh, je pense que cela me servira plus tard. Je vrais conserver cette note !"
+        textBoxContenu="Mmmh, je pense que cela me servira plus tard. Je vais conserver cette note !"
       />
       <BackgroundImg ImageNum={0} Blur={false}/>
       <Link href="pageCarte" ><NormalButton buttonText="voir la suite ->" link="" /></Link >

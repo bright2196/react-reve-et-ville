@@ -32,9 +32,9 @@ class Page6Pendu extends React.Component {
                 <div>
                   <img src={noteWin} className={styles.img} alt=""/>
                   <div className={styles.btnContainer}>
-                  <BoxText textBoxContenu='Super ! Le mot secret étais "Tableaux" ! Et il doit donc y en avoir treize sur la toile suivante... De plus qui est ce  fidèle compagnon ?'></BoxText>
+                  <BoxText textBoxContenu='Super ! Le mot secret étais "Tableaux" ! Et il doit donc y en avoir treize sur la toile suivante... De plus qui est ce fidèle compagnon ?'></BoxText>
                     <div className={styles.btn}><Link href="pageSalon" >
-                      <NormalButton buttonText="Voyons ou cela nous mène ..." link="" /></Link >
+                      <NormalButton buttonText="Voyons où cela nous mène ..." link="" /></Link >
                     </div>
                   </div>
                 </div>
@@ -50,10 +50,10 @@ class Page6Pendu extends React.Component {
                   const motJoueur = prompt('Quel est le mot secret ?')
                   if(motJoueur === 'tableaux' | motJoueur === 'Tableaux' | motJoueur === 'TABLEAUX' ){
                     this.setState({ win: true })
-                    console.log('tableaux a bien ete trouvé ')
+                    console.log('tableaux a bien été trouvé ')
                   }
                   }} className={styles.btn}>
-                  <NormalButton buttonText="Faire un essais" link="" />
+                  <NormalButton buttonText="Faire un essai" link="" />
                 </div>
               </div>
             </div>
