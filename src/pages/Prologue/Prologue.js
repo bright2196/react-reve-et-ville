@@ -15,6 +15,7 @@ const Prologue = () => {
         textBoxContenu="Mmmh, je pense que cela me servira plus tard. Je devrais conserver cette note !"
       />
       <BackgroundImg ImageNum={0} Blur={false}/>
+      <Link href="pageCarte" ><NormalButton buttonText="voir la suite ->" link="" /></Link >
       <p className={styles.desc}>
       Mon grand-père est décédé il y a quelques semaines maintenant. Parmi les affaires qu'il a légué, j'ai hérité d'un vieux carnet de croquis dont je n'ai jamais entendu parler. Il faut dire que je le connaissais peu. C'est curieux, les initiales ne sont même pas les bonnes…
       <br/><br/>
@@ -25,7 +26,6 @@ const Prologue = () => {
         <img className={styles.Imagecitation} src={image}  alt="Scratched Paper" />
         <p className={styles.citation}>Le regard du cavalier te guidera.</p>
       </div>
-      <Link href="pageCarte" ><NormalButton buttonText="voir la suite ->" link="" /></Link >
 
     </div>
   );
