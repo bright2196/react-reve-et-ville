@@ -3,23 +3,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    min-height: 100vh;
-    margin:0;
-    padding:0;
+    max-height: 100vh;
+    
 }
 
 
 .ContainerInput {
-    margin-top: 100px;
+    margin-top: 45px;
     margin-bottom: 40px;
 }
 
 
-.ContainerBoxText {
-    margin-top: 10px;
-}
+
 
 .imagePage7 {
     display: flex;
-    margin: 20px;
+
+   
+}
+
+.boutonSuivantPage7 {
+    margin-top: 17vh;
 }
