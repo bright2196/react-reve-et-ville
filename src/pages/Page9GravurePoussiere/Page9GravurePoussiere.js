@@ -10,7 +10,7 @@ import texture from '../../img/filtres/filtregravure.png'
 const Page9GravurePoussiere = () => {
   return (
     <div className={styles.containerPage9GravurePoussiere}>
-      <BackgroundImage ImageNum={0} Blur={false} GreyColor={true} BrownColor={false}/>
+      <BackgroundImage ImageNum={3} Blur={true} GreyColor={true} BrownColor={false}/>
       Page9GravurePoussiere
       <div className={styles.imageContainer}>
         <img src={image} className={styles.imageGravure} alt="Gravure"/>
