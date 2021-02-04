@@ -24,16 +24,15 @@ class Page6Pendu extends React.Component {
 
     return (
       <div className={styles.containerPage6Pendu}>
+        <BackgroundImg Blur={true} ImageNum='1'/>
         {
           win?
           (
               <div>
                 <div>
-                  <BackgroundImg Blur={true} ImageNum={1}/>
                   <img src={noteWin} className={styles.img} alt=""/>
                   <div className={styles.btnContainer}>
-                  <BoxText textBoxContenu='Super ! Le mot secret etais "Tableaux" ! Et il doit donc y en avoir treize... De plus qui est ce  fidèle compagnon ? 
-                Quel tableau pourrait correspondre  à cette description ?' namePerso="Vous" />
+                  <BoxText textBoxContenu='Super ! Le mot secret etais "Tableaux" ! Et il doit donc y en avoir treize... De plus qui est ce  fidèle compagnon ?'></BoxText>
                     <div className={styles.btn}><Link href="pageSalon" >
                       <NormalButton buttonText="Voyons ou cela nous mène ..." link="" /></Link >
                     </div>
@@ -49,7 +48,7 @@ class Page6Pendu extends React.Component {
                 <BoxText textBoxContenu="C'est treize ? Ques qu'il a voulu dire ? Quel est le mot secret?" namePerso="Vous" />
                 <div onClick={() => {
                   const motJoueur = prompt('Quel est le mot secret ?')
-                  if(motJoueur === 'tableaux' | motJoueur === 'Tableaux' ){
+                  if(motJoueur === 'tableaux' | motJoueur === 'Tableaux' | motJoueur === 'TABLEAUX' ){
                     this.setState({ win: true })
                     console.log('tableaux a bien ete trouvé ')
                   }

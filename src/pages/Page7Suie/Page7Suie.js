@@ -5,6 +5,7 @@ import imagePage7 from "./img/tableauPage7.jpg"
 import BoxText from "../../components/BoxText/BoxText";
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
+import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 
 const Page7Suie = () => {
   return (
@@ -13,6 +14,7 @@ const Page7Suie = () => {
           textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
           namePerso="Vous"
           />
+      <BackgroundImg ImageNum={0} Blur={true}/>
         <div className={styles.ContainerInput}>
               <InputText
                   placeholderInput="Saisir le code ici"
