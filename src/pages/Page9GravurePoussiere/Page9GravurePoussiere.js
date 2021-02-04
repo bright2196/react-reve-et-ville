@@ -17,7 +17,7 @@ const Page9GravurePoussiere = () => {
         <div className={styles.textureColor}></div>
         <div className={styles.texture} style={{backgroundImage: `url(${texture})`}}></div>
       </div>
-      {/* <Link href="pageGravureSansPoussiere" ><NormalButton buttonText="J'ai dépoussieré la gravure, voir la suite ->" link="" /></Link > */}
+      <Link href="pageGravureSansPoussiere" ><NormalButton buttonText="J'ai dépoussieré la gravure, voir la suite ->" link="" /></Link >
     </div>
   );
 };
