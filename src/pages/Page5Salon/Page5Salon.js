@@ -22,7 +22,7 @@ class Page5Salon extends React.Component {
     const { findTableau } = this.state
     return (
       <div>
-        <Header colorIcones={false}/>
+        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true}/>
         <BackgroundImg ImageNum={0} Blur={true}/>
         {
           findTableau?

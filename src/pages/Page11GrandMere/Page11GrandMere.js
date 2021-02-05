@@ -10,7 +10,7 @@ import Header from '../../components/Header/Header'
 const Page11GrandMere = () => {
   return (
     <div>
-      <Header colorIcones={true}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true}/>
       <div className={styles.containerPage11GrandMere}>
         <BackgroundImg ImageNum={3} Blur={true}/>
         <BoxText

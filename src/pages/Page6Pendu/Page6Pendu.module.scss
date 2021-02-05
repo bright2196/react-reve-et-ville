@@ -5,6 +5,30 @@
     min-height: 100vh;
 }
 
+.hintTuto {
+    position: absolute;
+    right: 8%;
+    top: 13%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  
+  
+  .hintTextTuto {
+    width: 260px;
+    font-family: "MirageThin";
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #4C2209;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+
 .btnContainer{
     display: flex;
     align-content: center;
