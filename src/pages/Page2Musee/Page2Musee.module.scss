@@ -14,7 +14,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.clickableArea {
+    width: 95px;
+    height: 84px;
+    background-color: rgba(0, 0, 0, 0);
     position: absolute;
+    left: 32%;
+    top: 16%;
 }
 .divProvisoire{
     position: absolute;

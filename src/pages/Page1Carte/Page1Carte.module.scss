@@ -17,7 +17,39 @@
   align-items: center;
   position: absolute;
 }
-.divProvisoire{
-  position: absolute;
+
+.containerImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.clickableArea {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 40.8%;
+  top: 41.5%; 
+}
+
+.hintCarnet {
+  position: absolute;
+  right: 5.5%;
+  top: 13%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+ 
+}
+
+
+.hintText {
+  width: 200px;
+  font-family: "MirageThin";
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #D9D1CC;
+}
