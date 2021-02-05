@@ -12,8 +12,6 @@ import Page9GravurePoussiere from "../pages/Page9GravurePoussiere/Page9GravurePo
 import Page10GravureSansPoussiere from "../pages/Page10GravureSansPoussiere/Page10GravureSansPoussiere";
 import Page11GrandMere from "../pages/Page11GrandMere/Page11GrandMere";
 import Page12Final from "../pages/Page12Final/Page12Final";
-import Page12Final2 from "../pages/Page12Final2/Page12Final";
-import Page12Final3 from "../pages/Page12Final3/Page12Final";
 import Prologue from "../pages/Prologue/Prologue";
 import Tutoriel from "../pages/Tutoriel/Tutoriel";
 import { AppContext } from "./AppProvider"
@@ -32,8 +30,6 @@ const pages = {
     pageGravureSansPoussiere: Page10GravureSansPoussiere,
     pageGrandMere: Page11GrandMere,
     pageFinal: Page12Final,
-    pageFinal2: Page12Final2,
-    pageFinal3: Page12Final3,
     prologue: Prologue,
     tutoriel: Tutoriel
 
