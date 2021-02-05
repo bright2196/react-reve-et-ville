@@ -9,7 +9,7 @@ import { ReactFlashlight } from "react-flashlight";
 import imgPage7 from "./img/tableauPage7.jpg";
 
 
-const style = {
+const style = () => {
   backgroundImage: `url(${imgPage7})`,
   height: "60vh",
   width: "50vw",
