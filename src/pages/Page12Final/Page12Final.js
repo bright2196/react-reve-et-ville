@@ -20,7 +20,7 @@ class Page12Final extends React.Component {
             à résoudre toutes les énigmes que ta grand-mère a disséminé tout au long de ses travaux... '></BoxText>
 
             <div className={styles.boutonSuivantPage12}>
-              <Link href="pageFinal2" ><NormalButton buttonText="Suivant ->" link="" /></Link >
+              <Link href="pageFinal2" ><NormalButton buttonText="Suivant ->" color="#FFFDF1" /></Link >
             </div>
     
       </div>

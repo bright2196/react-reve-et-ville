@@ -24,7 +24,7 @@ class Page12Final extends React.Component {
             Ton grand-père.'></BoxText>
 
             <div className={styles.boutonSuivantPage12}>
-              <Link href="home" ><NormalButton buttonText="C'est le final, retour a l'accueil ->" link="" /></Link >
+              <Link href="home" ><NormalButton buttonText="C'est le final, retour a l'accueil ->" color="#FFFDF1" /></Link >
             </div>
   
       </div>
