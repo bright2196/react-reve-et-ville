@@ -45,7 +45,7 @@ class Page6Pendu extends React.Component {
                   <div>
                     <img src={noteWin} className={styles.img} alt=""/>
                     <div className={styles.btnContainer}>
-                    <BoxText textBoxContenu='Super ! Le mot secret étais "Tableaux" ! Et il doit donc y en avoir treize sur la toile suivante... De plus qui est ce fidèle compagnon ?'></BoxText>
+                    <BoxText textBoxContenu='Super ! Le mot secret était "Tableaux" ! Et il doit donc y en avoir treize sur la toile suivante... Mais je me demande bien qui peut-être ce fidèle compagnon dont la musique parle...'></BoxText>
                       <div className={styles.btn}><Link href="pageSalon" >
                         <NormalButton buttonText="Voyons où cela nous mène ..." link="" /></Link >
                       </div>
