@@ -12,7 +12,7 @@ const Page10GravureSansPoussiere = () => {
     <div>
       <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true}/>
       <div className={styles.containerPage10GravureSansPoussiere}>
-        <BackgroundImg ImageNum={3} Blur={false}/>
+        <BackgroundImg ImageNum={3} Blur={true}/>
         <div>
           <img src={image} className={styles.imageGravure} alt="Gravure"/>
           <Link href="pageGrandMere" ><NormalButton buttonText="J'ai vu ma grand mère avec le pinceau, voir la suite ->" color="#FFFDF1" /></Link >
