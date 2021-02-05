@@ -1,13 +1,11 @@
 import styles from "./Page10GravureSansPoussiere.module.scss";
-import React, { useContext, useState } from 'react'
-import NormalButton from "../../components/NormalButton/NormalButton";
+import React from 'react'
 import Link from '../../components/Link/Link'
 import BoxText from "../../components/BoxText/BoxText";
 import BackgroundImage from '../../components/BackgroundImage/BackgroundImage';
 import image from '../../img/tableaux/gravure.jpg'
 import texture from '../../img/filtres/filtregravure.png'
 import Header from '../../components/Header/Header'
-import { AppContext } from '../../App/AppProvider'
 
 const Page10GravureSansPoussiere = () => {
   return (
@@ -20,11 +18,6 @@ const Page10GravureSansPoussiere = () => {
           <div className={styles.textureColor}></div>
           <div className={styles.texture} style={{backgroundImage: `url(${texture})`}}></div>
         </div>
-        {/* <div className={styles.divProvisoire}>
-          <Link href="pageGravureSansPoussiere" >
-            <NormalButton buttonText="J'ai dépoussieré la gravure, voir la suite ->" link="" />
-          </Link >
-        </div> */}
         <BoxText
           textBoxContenu="Mais… je ne comprends pas. On dirait un croquis de mon grand-père. Et là, ce serait..."
         />
