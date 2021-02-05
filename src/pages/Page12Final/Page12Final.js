@@ -25,8 +25,8 @@ class Page12Final extends React.Component {
     
       </div>
     </div>
-  );
- }
+    );
+  }
 };
 
 export default Page12Final;
