@@ -1,48 +1,51 @@
 import styles from "./Page7Suie.module.scss";
-import React from 'react'
-import InputText from "../../components/InputCode/InputCode";
+import React, {useState} from 'react'
+//import InputText from "../../components/InputCode/InputCode";
 import BoxText from "../../components/BoxText/BoxText";
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
 import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
-import { ReactFlashlight } from "react-flashlight";
-import imgPage7 from "./img/tableauPage7.jpg";
+import Header from '../../components/Header/Header'
 
 
-const style = () => {
-  backgroundImage: `url(${imgPage7})`,
-  height: "60vh",
-  width: "50vw",
-  backgroundRepeat: "no-repeat",
-  backgroundAttachment: "fixed",
-  backgroundSize: "50%",
-  backgroundPosition: "center",
-} 
 
 const Page7Suie = () => {
+
+  const [win, setwin] = useState(false);
+
   return (
-    <div className={styles.containerPage7Suie}>
-          <BoxText
-          textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
-          namePerso="Vous"
-          />
-      <BackgroundImg ImageNum={1} Blur={false}/>
-        <div className={styles.ContainerInput}>
-              <InputText
-                  placeholderInput="Saisir le code ici"
-              />
-        </div >
-    <div className={styles.imagePage7}>
-        <ReactFlashlight>
-          <div className={styles.imagePage7} style={style}>
-          </div>
-        </ReactFlashlight>
-        </div>
-        <div className={styles.boutonSuivantPage7}>
-        <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code, voir la suite ->" link="" /></Link >
-        </div>
+    <div >
+      <Header colorIcones={true}/>
+      <div className={styles.containerPage7Suie}>
+            <BoxText
+            textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
+            namePerso="Vous"
+            />
+        <BackgroundImg ImageNum={1} Blur={false}/>
+            <div className={styles.imagePage7}>
+                  <div  id="focusPage7" className={styles.focusPage7} onMouseMove={ (event) => { document.getElementById('focusPage7').style.backgroundPosition = (event.clientX) + 'px ' + (event.clientY - 300)+ 'px'}}></div>
+            </div>
+            <div className={styles.containerBoutons}>
+            {
+              win? (
+                <div className={styles.boutonSuivantPage7}>
+                <Link href="pageTransition" ><NormalButton buttonText="J'ai trouvé le code ! Il correspond a un numéro d'archive 'ARCH-342'... voir la suite ->" link="" /></Link >
+                </div>
+                ) 
+                : 
+                (
+                <div onClick={() => {
+                let code = prompt('Quel est le code ?')
+                if(code === 'ARCH-342'){
+                  setwin(true)
+                }}}><NormalButton buttonText="Essai un code" /></div>
+                )
+            }
+            </div>
+      </div>
     </div>
   );
 };
+
 
 export default Page7Suie;

@@ -4,6 +4,7 @@ import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
 import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 import BoxText from "../../components/BoxText/BoxText";
+import Header from '../../components/Header/Header'
 //Img
 import TableauImag from '../../img/tableaux/Salon.jpg'
 import TableauImagEdit from '../../img/tableaux/SalonEdit.jpg'
@@ -21,6 +22,7 @@ class Page5Salon extends React.Component {
     const { findTableau } = this.state
     return (
       <div>
+        <Header colorIcones={false}/>
         <BackgroundImg ImageNum={0} Blur={true}/>
         {
           findTableau?
