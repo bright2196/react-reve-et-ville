@@ -13,6 +13,7 @@ class BoxText extends React.Component {
                   {/* <Typewriter
                     options={{
                       delay: 20,
+                      cursur'➢',
                       cursorClassName: 'Cursor-BoxTex',
                     }}
                     onInit={(typewriter => {
@@ -30,6 +31,7 @@ class BoxText extends React.Component {
                   {/* <Typewriter
                     options={{
                       delay: 20,
+                      cursur'➢',
                       cursorClassName: 'Cursor-BoxTex2',
                     }}
                     onInit={(typewriter) => {
