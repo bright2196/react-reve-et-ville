@@ -9,7 +9,7 @@ import Header from '../../components/Header/Header'
 const Page3NatureMorte = () => {
   return (
     <div>
-      <Header colorIcones={true}/>
+      <Header colorIcones={true} allowPageSecrete={false} allowCarnet={true}/>
       <div className={styles.boutonSuivantContainer}>
             <Link href="pageLoupe" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">

@@ -29,7 +29,7 @@ const Page9GravurePoussiere = () => {
   
   return (
     <div>
-      <Header colorIcones={true}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true}/>
       <div className={styles.containerPage9GravurePoussiere}>
         <BackgroundImage ImageNum={3} Blur={true} GreyColor={true} BrownColor={false}/>
         <div className={styles.imageContainer}>

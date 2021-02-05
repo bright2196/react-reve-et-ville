@@ -25,7 +25,7 @@ class Page6Pendu extends React.Component {
 
     return (
       <div>
-        <Header colorIcones={false}/>
+        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true}/>
         <div className={styles.hintTuto}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12.492" height="31.072" viewBox="0 0 12.492 31.072">
             <g id="Groupe_16" data-name="Groupe 16" transform="translate(0.246)">

@@ -9,7 +9,7 @@ import Header from '../../components/Header/Header'
 const Page2Musee = () => {
   return (
     <div>
-      <Header colorIcones={true}/>
+      <Header colorIcones={true} allowPageSecrete={false} allowCarnet={true}/>
       <div className={styles.containerPage2Musee}>
         <BackgroundImg ImageNum={2} Blur={true} BrownColor={true}/>
         

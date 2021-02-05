@@ -10,7 +10,7 @@ import Loupe from "../../components/Loupe/Loupe";
 const Page4Loupe = () => {
   return (
     <div>
-      <Header colorIcones={true} />
+      <Header colorIcones={true} allowPageSecrete={false} allowCarnet={true}/>
       <div className={styles.containerPage4Loupe}>
 
         <BackgroundImg ImageNum={2} Blur={true} />

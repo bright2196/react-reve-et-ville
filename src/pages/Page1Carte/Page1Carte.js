@@ -11,7 +11,7 @@ import Header from '../../components/Header/Header'
 const Page1Carte = () => {
   return (
     <div>
-      <Header colorIcones={true}/>
+      <Header colorIcones={true} allowPageSecrete={false} allowCarnet={true}/>
       <div className={styles.hintCarnet}>
               <svg xmlns="http://www.w3.org/2000/svg" width="12.492" height="31.072" viewBox="0 0 12.492 31.072">
           <g id="Groupe_10" data-name="Groupe 10" transform="translate(-1201.254 -107.428)">

@@ -37,6 +37,8 @@ class Carnet extends React.Component {
 
     const parentClassName = this.props.ouverture ? styles.ContainerCarnetOn : styles.ContainerCarnetOff
 
+    const endPages = this.props.allowPageSecrete? carnetPages.length-1 : 3
+
     return (
     <div> 
         <div className={parentClassName}>
@@ -58,7 +60,7 @@ class Carnet extends React.Component {
                 <img src={carnetPages[currentPageIndex]} alt="Carnet" /> 
             </div>
             {
-                currentPageIndex < carnetPages.length-1
+                currentPageIndex <  endPages
                 ? (
                 <div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex + 1 })}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="33.603" height="25.243" viewBox="0 0 33.603 25.243">
