@@ -1,4 +1,4 @@
-.containerPage10GravureSansPoussiere{
+.containerPage9GravurePoussiere{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -6,4 +6,74 @@
     justify-content: center;
     align-items: center;
 }
+.imageContainer{
+    height: 100%;
+    object-fit: contain;
+    max-height: 70vh;
+    max-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.imageGravure{
+    height: 100%;
+    max-width: 70vw;
+    object-fit: contain;
+}
+.texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition-duration: 0.7s;
+}
+.textureColor{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    background-color: #434134;
+    transition-duration: 0.7s;
+}
+@media screen and (max-width: 551px) {
+    .imageGravure{
+        height: 92vw;
+    }
+    .texture{
+        height: 92vw;
+    }
+    .textureColor{
+        height: 92vw;
+    }
+}
+.divProvisoire{
+    position: absolute;
+}
+.visibleImageTexture{
+    opacity: 0.1;
+}
+.hiddenImageTexture{
+    opacity: 0;
+}
+.visibleColorTexture{
+    opacity: 0.83;
+}
+.hiddenColorTexture{
+    opacity: 0;
+}
 
+.boutonSuivantContainer {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transition: transform 330ms ease-in-out;
+}
+
+.boutonSuivantContainer:hover {
+    transform: translateX(-20px);
+    cursor: pointer;
+}
