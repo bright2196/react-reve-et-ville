@@ -1,5 +1,5 @@
 import styles from "./Page9GravurePoussiere.module.scss";
-import React from 'react'
+import React, {useEffect}  from 'react'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
 import BackgroundImage from '../../components/BackgroundImage/BackgroundImage';
@@ -9,7 +9,23 @@ import Header from '../../components/Header/Header'
 
 
 const Page9GravurePoussiere = () => {
-  
+  useEffect(() => {
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;    
+    
+    navigator.getUserMedia(
+      {
+        audio: true
+      },
+      function (e) {     
+        // success
+        console.log("success");   
+      },     
+      function (e) {     
+        // error     
+        console.error(e);     
+      }
+    );
+  });
   
   return (
     <div>
