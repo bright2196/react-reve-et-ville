@@ -21,7 +21,7 @@ const Page2Musee = () => {
           </div>
        
         <BoxText
-          textBoxContenu='Maintenant que je suis au bon endroit, voyons si la note laissée par mon grand père peut être utile. "Le regard du cavalier te guidera..." Qu’est ce que cela veut bien pouvoir dire ?'
+          textBoxContenu='Maintenant que je suis au bon endroit, voyons si la note laissée par mon grand-père peut être utile. "Le regard du cavalier te guidera..." Qu’est-ce que cela veut bien pouvoir dire ?'
           namePerso="Vous"
         />
         

@@ -21,7 +21,7 @@ const Page1Carte = () => {
           </g>
               </svg>
 
-              <p className={styles.hintText}>Aide toi de ton carnet pour trouver le bon emplacement. Clique sur la carte quand tu as trouvé. Échec et mat… </p>
+              <p className={styles.hintText}>Aide-toi de ton carnet pour trouver le bon emplacement. Clique sur la carte quand tu as trouvé. Échec et mat… </p>
       </div>
 
       <div className={styles.containerPage1Carte}>

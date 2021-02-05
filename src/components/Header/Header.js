@@ -3,17 +3,22 @@ import React from 'react'
 import Carnet from "../Carnet/Carnet";
 import PropTypes from 'prop-types';
 
+
+
+
+
 class Header extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
             onCarnet: false
-        };
-      }
-  
-    render() {
 
+        };
+       
+      }
+
+    render() {
     let color = ''
 
     if(this.props.colorIcones === true | this.props.colorIcones === false )

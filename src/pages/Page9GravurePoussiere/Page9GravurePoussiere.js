@@ -78,7 +78,7 @@ const Page9GravurePoussiere = () => {
           <div className={[styles.texture,imageTextureClassName].join(' ')} style={{backgroundImage: `url(${texture})`}}></div>
         </div>
         <BoxText
-          textBoxContenu="La gravure est pleine de poussière, la dépoussierer ne ferait pas de mal... 🌬"
+          textBoxContenu="La gravure est pleine de poussière, la dépoussiérer ne ferait pas de mal... 🌬"
         />
       </div>
       <div className={boutonSuivantContainerClassName}>

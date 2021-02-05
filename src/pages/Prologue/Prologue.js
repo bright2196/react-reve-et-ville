@@ -36,7 +36,7 @@ const Prologue = () => {
         <BackgroundImg ImageNum={0} Blur={false}/>        
           
           <p className={styles.desc}>
-          Mon grand-père est décédé il y a quelques semaines maintenant. Parmi les affaires qu'il a légué, j'ai hérité d'un vieux carnet de croquis dont je n'ai jamais entendu parler. Il faut dire que je le connaissais peu. C'est curieux, les initiales ne sont même pas les bonnes… Je vais le conserver. Il pourrait m'être utile pour la suite...
+          Mon grand-père est décédé il y a quelques semaines maintenant. Parmi les affaires qu'il a léguées, j'ai hérité d'un vieux carnet de croquis dont je n'ai jamais entendu parler. Il faut dire que je le connaissais peu. C'est curieux, les initiales ne sont même pas les bonnes… Je vais le conserver. Il pourrait m'être utile pour la suite...
           <br/><br/>
           Et il y a une étrange note glissée entre les pages :
           </p>
