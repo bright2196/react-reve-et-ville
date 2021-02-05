@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "./Page3NatureMorte.module.scss";
 import BackgroundImg from "../../components/BackgroundImage/BackgroundImage";
-import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
 import BoxText from '../../components/BoxText/BoxText';
 import naturemorte from '../../img/tableaux/NatureMorte.jpg';
@@ -35,8 +34,7 @@ const Page3NatureMorte = () => {
           textBoxContenu="Ce carnet ressemble étrangement au mien… Mais, cette page n’est pas censée exister..."
           namePerso="Vous"
         />
-        <div className={styles.divProvisoire}>
-        </div>
+        
       </div>
     </div>
   );
