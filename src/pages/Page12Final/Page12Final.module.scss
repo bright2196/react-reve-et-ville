@@ -3,13 +3,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .boutonSuivantPage12 {
     z-index: 1;
-    position: absolute;
 }
 
 .imgFinal{
@@ -20,5 +19,16 @@
     z-index: 0;
 }
 
-
-
+.finaltext{
+    color: #FFFDF1;
+    width: 75vw;
+    font-size: 18px;
+    font-family: 'Regis';
+    letter-spacing: 0.1vw;
+    padding: 50px;
+    background-color: RGBA(0,0,0,0.60);
+    border: double RGBA(217,209,204,0.68);
+    border-radius: 12px;
+    align-items: center;
+    z-index: 5;
+}
