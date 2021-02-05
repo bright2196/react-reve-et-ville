@@ -29,7 +29,7 @@ class Page4Loupe extends React.Component {
                 <Link href="pagePendu">
                   <NormalButton
                     buttonText="Bien joué ! Voyons où cela nous mène ..."
-                    link=""
+                    color="#FFFDF1"
                   />
                 </Link>
               </div>
@@ -50,7 +50,7 @@ class Page4Loupe extends React.Component {
                 }}
                 className={styles.btn}
               >
-                <NormalButton buttonText="Avez-vous trouvé le numéro ?" />
+                <NormalButton buttonText="Avez-vous trouvé le numéro ?" color="#FFFDF1" />
               </div>
               <div className={styles.hahajenaimarre}>
                 <Loupe className={styles.tableau} />

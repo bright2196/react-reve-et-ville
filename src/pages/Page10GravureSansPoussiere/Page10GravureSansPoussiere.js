@@ -15,7 +15,7 @@ const Page10GravureSansPoussiere = () => {
         <BackgroundImg ImageNum={3} Blur={false}/>
         <div>
           <img src={image} className={styles.imageGravure} alt="Gravure"/>
-          <Link href="pageGrandMere" ><NormalButton buttonText="J'ai vu ma grand mère avec le pinceau, voir la suite ->" link="" /></Link >
+          <Link href="pageGrandMere" ><NormalButton buttonText="J'ai vu ma grand mère avec le pinceau, voir la suite ->" color="#FFFDF1" /></Link >
         </div>
         
       </div>

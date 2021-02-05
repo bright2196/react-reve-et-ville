@@ -12,7 +12,7 @@ const Page7Suie = () => {
 
   return (
     <div>
-      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} />
+      <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} />
       <div className={styles.containerPage7Suie}>
         <BoxText
           textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
@@ -25,7 +25,7 @@ const Page7Suie = () => {
             className={styles.focusPage7}
             onMouseMove={(event) => {
               document.getElementById("focusPage7").style.backgroundPosition =
-                event.clientX + "px " + (event.clientY - 300) + "px";
+                (event.clientX + 250) + "px " + (event.clientY - 300) + "px";
             }}
           ></div>
         </div>
@@ -34,7 +34,7 @@ const Page7Suie = () => {
             <div className={styles.boutonSuivantPage7}>
               <Link href="pageTransition">
                 <NormalButton
-                  buttonText="J'ai trouvé le code ! Il correspond a un numéro d'archive 'ARCH-342'... voir la suite ->"
+                  buttonText="J'ai trouvé le code ! Il correspond a un numéro d'archive 'ARCH-342'..."
                   link=""
                 />
               </Link>

@@ -23,9 +23,10 @@
     box-sizing: border-box;
     position: fixed;
     background-size: cover;
+    background-origin: border-box; 
     width:800px;
     height:600px;
-    background: -webkit-radial-gradient(200px 200px, circle contain, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)) center center;
+    background: -webkit-radial-gradient(150px 150px, circle contain, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)) center;
     display: flex;
  }
 
