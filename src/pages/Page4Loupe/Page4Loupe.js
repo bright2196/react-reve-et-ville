@@ -50,7 +50,7 @@ class Page4Loupe extends React.Component {
                 }}
                 className={styles.btn}
               >
-                <NormalButton buttonText="Faire un essai" />
+                <NormalButton buttonText="Avez-vous trouvé le numéro ?" />
               </div>
               <div className={styles.hahajenaimarre}>
                 <Loupe className={styles.tableau} />
