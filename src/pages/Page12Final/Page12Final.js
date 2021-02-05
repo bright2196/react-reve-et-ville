@@ -3,7 +3,7 @@ import React from "react";
 import BackgroundImg from "../../components/BackgroundImage/BackgroundImage";
 import ImageLettreFinal from "../../img/Final.png";
 import BoxText from "../../components/BoxText/BoxText";
-import Header from "../../components/Header/Header";
+import Header from "../../components/Header/Header"; 
 
 class Page12Final extends React.Component {
   render() {
