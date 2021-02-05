@@ -1,6 +1,5 @@
 import styles from "./Page9GravurePoussiere.module.scss";
-import React, { useContext, useState } from 'react'
-import NormalButton from "../../components/NormalButton/NormalButton";
+import React, { useContext} from 'react'
 import Link from '../../components/Link/Link'
 import BoxText from "../../components/BoxText/BoxText";
 import BackgroundImage from '../../components/BackgroundImage/BackgroundImage';
@@ -11,7 +10,7 @@ import { AppContext } from '../../App/AppProvider'
 
 const Page9GravurePoussiere = () => {
 
-  const { setCurrentPage , BlowDetected, setBlowDetected } = useContext(AppContext)
+  const { BlowDetected, setBlowDetected } = useContext(AppContext)
 
   navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
   if (navigator.getUserMedia) {
@@ -52,7 +51,6 @@ const Page9GravurePoussiere = () => {
           // console.log(Math.round(average - 40));
           if (average > 90){
             console.log("Blow detected");
-            // setCurrentPage("pageGravureSansPoussiere");
             setBlowDetected(true)
             console.log(BlowDetected);
           }
@@ -79,11 +77,6 @@ const Page9GravurePoussiere = () => {
           <div className={[styles.textureColor,colorTextureClassName].join(' ')}></div>
           <div className={[styles.texture,imageTextureClassName].join(' ')} style={{backgroundImage: `url(${texture})`}}></div>
         </div>
-        {/* <div className={styles.divProvisoire}>
-          <Link href="pageGravureSansPoussiere" >
-            <NormalButton buttonText="J'ai dépoussieré la gravure, voir la suite ->" link="" />
-          </Link >
-        </div> */}
         <BoxText
           textBoxContenu="La gravure est pleine de poussière, la dépoussierer ne ferait pas de mal... 🌬"
         />
