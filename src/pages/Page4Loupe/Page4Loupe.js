@@ -32,7 +32,7 @@ class Page4Loupe extends React.Component {
                 <Link href="pagePendu">
                   <NormalButton
                     buttonText="Bien joué ! Voyons où cela nous mène ..."
-                    link=""
+                    color="#FFFDF1"
                   />
                 </Link>
               </div>

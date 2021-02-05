@@ -29,6 +29,7 @@
     background-size: cover;
     background-position: center;
     opacity: 0.1;
+    transition-duration: 0.7s;
 }
 .textureColor{
     width: 100%;
@@ -36,6 +37,7 @@
     position: absolute;
     opacity: 0.83;
     background-color: #434134;
+    transition-duration: 0.7s;
 }
 @media screen and (max-width: 551px) {
     .imageGravure{
@@ -51,4 +53,15 @@
 .divProvisoire{
     position: absolute;
 }
-
+.visibleImageTexture{
+    opacity: 0.1;
+}
+.hiddenImageTexture{
+    opacity: 0;
+}
+.visibleColorTexture{
+    opacity: 0.83;
+}
+.hiddenColorTexture{
+    opacity: 0;
+}
