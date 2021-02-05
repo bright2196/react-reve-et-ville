@@ -1,42 +1,35 @@
-.containerPage4Loupe{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.containerPage4Loupe {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.divProvisoire{
-    position: absolute;
+.divProvisoire {
+  position: absolute;
 }
-.tableau{
-    height: 100%;
-    object-fit: contain;
-    max-height: 70vh;
-    max-width: 70vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+.tableau {
+  height: 100%;
+  object-fit: contain;
+  max-height: 70vh;
+  max-width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 
 .img-magnifier-glass {
-    position: absolute;
-    border: 2px solid #000;
-    border-radius: 50%;
-    cursor: none;
-    /*Set the size of the magnifier glass:*/
-    width: 100px;
-    height: 100px;
-  }
+  position: absolute;
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
 
-  .zone {
-    z-index: 1;
-    position: absolute;
-    top: 51%;
-    left: 56%;
-    height: 50px;
-    width: 50px;
-    background-color: red;
-    cursor: pointer;
+.hahajenaimarre {
+  max-width: 50vw;
 }
