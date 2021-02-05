@@ -9,6 +9,7 @@ const App = () => {
   return (
     <AppProvider>
       <div className="App">
+        
         <Router/>
       </div>
     </AppProvider>
