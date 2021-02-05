@@ -6,9 +6,6 @@ import Router from './Router'
 
 
 const App = () => {
-  // const [page, setPage] = useState("home");
-  
-
   return (
     <AppProvider>
       <div className="App" >
