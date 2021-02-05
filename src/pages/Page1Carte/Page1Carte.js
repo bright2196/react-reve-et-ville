@@ -30,13 +30,7 @@ const Page1Carte = () => {
             <div className={styles.containerImage}>
               <img className={styles.imageCarte} src={Carte} id='Carte' alt="Carte de Bordeaux"/>
               <Link href="pageMusee" >
-                <div className={styles.clickableArea} id='clickableArea' onLoad={
-                  ()=>{
-                    let Image = document.getElementById('Carte')
-                    let rect = Image.getBoundingClientRect()
-                    document.getElementById('clickableArea').style.position('20px 30px')
-                  }
-                } ></div>
+                <div className={styles.clickableArea} id='clickableArea'></div>
               </Link>
             </div> 
           </div>
