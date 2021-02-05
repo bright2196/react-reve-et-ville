@@ -22,7 +22,7 @@ class Page5Salon extends React.Component {
     const { findTableau } = this.state
     return (
       <div>
-        <Header colorIcones={false}/>
+        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true}/>
         <BackgroundImg ImageNum={0} Blur={true}/>
         {
           findTableau?
@@ -35,10 +35,6 @@ class Page5Salon extends React.Component {
           :
           (
              <div className={styles.containerPage5Salon}>
-
-               
-                
-                
                 <img src={TableauImag} className={styles.tableau} alt="" />
                 
                 <BoxText textBoxContenu="Je crois qu'on a enfin trouvé le tableau correspondant ! Aux côtés de son fidèle chien évidemment ! C’est une peinture de mon grand-père dans son salon. C’est étrange… Dans mes souvenirs, l’un des tableaux était différent…" 

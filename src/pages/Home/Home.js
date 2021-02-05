@@ -9,7 +9,7 @@ import Header from '../../components/Header/Header'
 const Home = () => {
   return (
       <div>
-        <Header colorIcones={false}/>
+        <Header colorIcones={false} allowPageSecrete={false} allowCarnet={false}/>
         <div className={[styles.titlescreen, styles.animFadeIn].join(' ')}>
             <BackgroundImage ImageNum={0} Blur={false} GreyColor={true} BrownColor={false}/>
             <div className={styles.title}>
