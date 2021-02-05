@@ -4,11 +4,12 @@ import React from "react";
 import AppProvider from './AppProvider'
 import Router from './Router'
 
-const App = () => {
 
+const App = () => {
   return (
     <AppProvider>
-      <div className="App">
+      <div className="App" >
+        
         <Router/>
       </div>
     </AppProvider>

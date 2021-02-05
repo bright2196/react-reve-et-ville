@@ -29,12 +29,12 @@ class Page6Pendu extends React.Component {
         <div className={styles.hintTuto}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12.492" height="31.072" viewBox="0 0 12.492 31.072">
             <g id="Groupe_16" data-name="Groupe 16" transform="translate(0.246)">
-                <path id="Tracé_57" data-name="Tracé 57" d="M0,31V0" transform="translate(6)" fill="none" stroke="#4c2209" stroke-width="1"/>
-                <path id="Tracé_50" data-name="Tracé 50" d="M6,10A19.413,19.413,0,0,0,3.975,3.9,12.233,12.233,0,0,0,0,0" transform="translate(0 21)" fill="none" stroke="#4c2209" stroke-width="1"/>
-                <path id="Tracé_51" data-name="Tracé 51" d="M0,10A19.413,19.413,0,0,1,2.025,3.9,12.233,12.233,0,0,1,6,0" transform="translate(6 21)" fill="none" stroke="#4c2209" stroke-width="1"/>
+                <path id="Tracé_57" data-name="Tracé 57" d="M0,31V0" transform="translate(6)" fill="none" stroke="#4c2209" strokeWidth="1"/>
+                <path id="Tracé_50" data-name="Tracé 50" d="M6,10A19.413,19.413,0,0,0,3.975,3.9,12.233,12.233,0,0,0,0,0" transform="translate(0 21)" fill="none" stroke="#4c2209" strokeWidth="1"/>
+                <path id="Tracé_51" data-name="Tracé 51" d="M0,10A19.413,19.413,0,0,1,2.025,3.9,12.233,12.233,0,0,1,6,0" transform="translate(6 21)" fill="none" stroke="#4c2209" strokeWidth="1"/>
             </g>
             </svg>
-              <p className={styles.hintTextTuto}>Peut-être que la page secrète que vous avez découvert peut vous aider sur cette énigme…</p>
+              <p className={styles.hintTextTuto}>Peut-être que la page secrète que vous avez découverte peut vous aider sur cette énigme…</p>
       </div>
         <div className={styles.containerPage6Pendu}>
           <BackgroundImg Blur={true} ImageNum={1}/>
