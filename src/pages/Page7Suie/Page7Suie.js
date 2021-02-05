@@ -40,7 +40,7 @@ const Page7Suie = () => {
             <div className={styles.boutonSuivantPage7}>
               <Link href="pageTransition">
                 <NormalButton
-                  buttonText="J'ai trouvé le code ! Il correspond a un numéro d'archive 'ARCH-342'..."
+                  buttonText="J'ai trouvé le code ! Il correspond à un numéro d'archive 'ARCH-342'..."
                   link=""
                 />
               </Link>

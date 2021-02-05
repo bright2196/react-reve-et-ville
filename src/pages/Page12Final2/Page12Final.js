@@ -19,8 +19,8 @@ class Page12Final extends React.Component {
         <BackgroundImg ImageNum={3} Blur={false}/>
         <img src={ImageLettreFinal} className={styles.imgFinal} alt='' />
                   <BoxText textBoxContenu='Car oui, la véritable artiste derrière tout ça c’était elle. 
-                  Tu as su faire preuve d’observation, de déduction et de patience pour en arriver là. Ta grand-mère et moi aimions par dessus tout les énigmes et jeux de rôles. 
-                  Dès le début cela était son idée, et nous sommes fiers que tu aies pu en arriver au bout, fiers de toi.
+                  Tu as su faire preuve d’observation, de déduction et de patience pour en arriver là. Ta grand-mère et moi aimions par-dessus tout les énigmes et jeux de rôles. 
+                  Dès le début, cela était son idée, et nous sommes fiers que tu aies pu en arriver au bout, fiers de toi.
                   '></BoxText>
                     <div className={styles.boutonSuivantPage12}>
                       <Link href="pageFinal3" ><NormalButton buttonText="Suivant ->" color="#FFFDF1" /></Link >
