@@ -26,7 +26,7 @@ const Page10GravureSansPoussiere = () => {
           </Link >
         </div> */}
         <BoxText
-          textBoxContenu="Mais… je e comprend pas. On dirait un croquis de mon grand-père. Et là, ce serait..."
+          textBoxContenu="Mais… je ne comprends pas. On dirait un croquis de mon grand-père. Et là, ce serait..."
         />
       </div>
       <div className={styles.boutonSuivantContainer}>
