@@ -8,7 +8,7 @@ import Header from '../../components/Header/Header'
 const Page8Transition = () => {
   return (
     <div>
-      <Header colorIcones={false}/>
+      <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true}/>
       <div className={styles.containerPage8Transition}>
         <BackgroundImg ImageNum={0} Blur={false}/>
           <div className={styles.containerPage8Transition}>

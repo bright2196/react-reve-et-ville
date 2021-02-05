@@ -15,7 +15,7 @@ const Page7Suie = () => {
 
   return (
     <div >
-      <Header colorIcones={true}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true}/>
       <div className={styles.containerPage7Suie}>
             <BoxText
             textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"

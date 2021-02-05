@@ -47,12 +47,14 @@ class Header extends React.Component {
     
                 <div className={styles.pictosdroite}>
                     <button id='btn-carnet' onClick={() => {
-                        this.setState({ onCarnet: !this.state.onCarnet })
-                        color = this.props.colorIcones
+                        if(this.props.allowCarnet){
+                          this.setState({ onCarnet: !this.state.onCarnet })
+                        color = this.props.colorIcones  
+                        }  
                     }}>
                         <div className={styles.stack}>
                             {
-                                !this.state.onCarnet?
+                                this.state.onCarnet?
                                 (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                                 )
@@ -93,7 +95,7 @@ class Header extends React.Component {
         
         
             </div>
-            < Carnet ouverture={this.state.onCarnet} colorCarnet={color}/>
+            < Carnet ouverture={this.state.onCarnet} colorCarnet={color} allowPageSecrete={this.props.allowPageSecrete}/>
         </div>
     )
 }
@@ -101,7 +103,8 @@ class Header extends React.Component {
 
 Header.propTypes = {
     color: PropTypes.bool,
-
+    allowCarnet: PropTypes.bool,
+    allowPageSecrete: PropTypes.bool
   }
 
 export default Header

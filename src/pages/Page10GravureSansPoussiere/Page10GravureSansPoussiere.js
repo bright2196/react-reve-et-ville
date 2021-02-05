@@ -10,7 +10,7 @@ import image from '../../img/tableaux/gravure.jpg'
 const Page10GravureSansPoussiere = () => {
   return (
     <div>
-      <Header colorIcones={true}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true}/>
       <div className={styles.containerPage10GravureSansPoussiere}>
         <BackgroundImg ImageNum={3} Blur={false}/>
         <div>
