@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './BoxText.module.scss';
 import PropTypes from 'prop-types';
-//import Typewriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect';
 
 class BoxText extends React.Component {
   render() {
@@ -9,8 +9,8 @@ class BoxText extends React.Component {
     <div id="app" className= {styles.ContainerBox}>
             <div className= {styles.Containertext}>
                 <label className={styles.namePerso}>
-                  {this.props.namePerso}
-                  {/* <Typewriter
+                  {/* {this.props.namePerso} */}
+                  <Typewriter
                     options={{
                       delay: 20,
                       cursorClassName: 'Cursor-BoxTex',
@@ -23,11 +23,11 @@ class BoxText extends React.Component {
                         })
                         .start();
                     })}
-                  /> */}
+                  />
                 </label>
                 <p className={styles.corpsBoxText}>
-                  {this.props.textBoxContenu}
-                  {/* <Typewriter
+                  {/* {this.props.textBoxContenu} */}
+                  <Typewriter
                     options={{
                       delay: 20,
                       cursorClassName: 'Cursor-BoxTex2',
@@ -42,12 +42,12 @@ class BoxText extends React.Component {
                         })
                         .start();
                     }}
-                  /> */}
+                  />
                 </p>
                 
             </div>
     
-      </div>
+      </div> 
     );
   }
 }
