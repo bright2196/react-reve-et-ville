@@ -9,29 +9,29 @@
 @font-face {
   font-family: "MirageBlack";
   font-weight: 700;
-	src: url(./fonts/madeMirage/MadeMirageBlack.otf);
+	src: url(./fonts/madeMirage/MadeMirageBlack.otf) format('opentype');
 }
 @font-face {
 	font-family: "MirageBold";
 	font-weight: 500;
-	src: url(./fonts/madeMirage/MadeMirageBold.otf);
+	src: url(./fonts/madeMirage/MadeMirageBold.otf) format('opentype');
 }
 @font-face {
 	font-family: "MirageMedium";
 	font-weight: normal;
-	src: url(./fonts/madeMirage/MadeMirageMedium.otf);
+	src: url(./fonts/madeMirage/MadeMirageMedium.otf) format('opentype');
 }
 
 @font-face {
 	font-family: "Mirage";
 	font-weight: 300;
-	src: url(./fonts/madeMirage/MadeMirage.otf);
+	src: url(./fonts/madeMirage/MadeMirage.otf) format('opentype');
 }
 
 @font-face {
 	font-family: "MirageThin";
 	font-weight: 200;
-	src: url(./fonts/madeMirage/MadeMirageThin.otf);
+	src: url(./fonts/madeMirage/MadeMirageThin.otf) format('opentype');
 }
 body {
   margin: 0;
