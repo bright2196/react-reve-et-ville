@@ -18,7 +18,7 @@ const Page2Musee = () => {
               <Link href="pageNatureMorte" >
               <div className={styles.clickableArea} ></div>
               </Link>
-            </div>
+          </div>
        
         <BoxText
           textBoxContenu='Maintenant que je suis au bon endroit, voyons si la note laissée par mon grand père peut être utile. "Le regard du cavalier te guidera..." Qu’est ce que cela veut bien pouvoir dire ?'

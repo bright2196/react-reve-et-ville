@@ -24,8 +24,14 @@ const Page7Suie = () => {
             id="focusPage7"
             className={styles.focusPage7}
             onMouseMove={(event) => {
+              let xClick = event.clientX
+              let yClick = event.clientY
+              let board = document.getElementById('focusPage7')
+              const rect = board.getBoundingClientRect()
+              let x = xClick - rect.left - 150 
+              let y = yClick - rect.top - 150
               document.getElementById("focusPage7").style.backgroundPosition =
-                (event.clientX + 250) + "px " + (event.clientY - 300) + "px";
+                (x) + "px " + (y) + "px";
             }}
           ></div>
         </div>
