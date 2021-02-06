@@ -2,12 +2,19 @@ import React from "react";
 import styles from './BoxText.module.scss';
 import PropTypes from 'prop-types';
 import Typewriter from 'typewriter-effect';
+import Song from '../../audio/readout.mp3'
 
 class BoxText extends React.Component {
   render() {
+    
+
     return (
     <div id="app" className= {styles.ContainerBox}>
-            <div className= {styles.Containertext}>
+            <audio id='songBoxText' src={Song} onLoadStart={()=>{
+              const audio = document.getElementById('songBoxText');
+              audio.play()
+            }} />
+            <div className= {styles.Containertext} >
                 <label className={styles.namePerso}>
                   {/* {this.props.namePerso} */}
                   <Typewriter

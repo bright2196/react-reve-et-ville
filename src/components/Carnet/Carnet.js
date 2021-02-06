@@ -39,13 +39,18 @@ class Carnet extends React.Component {
 
     const endPages = this.props.allowPageSecrete? carnetPages.length-1 : 3
 
+    const audio = document.getElementById('audioPageCarnet');
+
     return (
     <div> 
-        <div className={parentClassName}>
+        <div className={parentClassName} >
             {
                 currentPageIndex > 0 
                 ?
-                (<div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex - 1 })}>
+                (<div className={styles.fleche} onClick={() =>{ 
+                    this.setState({ currentPageIndex: currentPageIndex - 1 })
+                    audio.play()
+                    }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="33.603" height="25.243" viewBox="0 0 33.603 25.243">
                         <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(1.5 2.121)">
                             <path id="Tracé_52" data-name="Tracé 52" d="M38.1,18H7.5" transform="translate(-7.5 -7.5)" fill="none" stroke={this.props.colorCarnet} strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
@@ -57,12 +62,18 @@ class Carnet extends React.Component {
                 (<div className={styles.fleche}></div>)
             }
             <div className={styles.Carnet}>
-                <img src={carnetPages[currentPageIndex]} alt="Carnet" /> 
+                <img src={carnetPages[currentPageIndex]} alt="Carnet" />
+                <audio src={AudioPage} id='audioPageCarnet' /> 
             </div>
             {
                 currentPageIndex <  endPages
                 ? (
-                <div className={styles.fleche} onClick={() => this.setState({ currentPageIndex: currentPageIndex + 1 })}>
+                <div className={styles.fleche} id='flechedroite'
+                    onClick={() => {
+                    this.setState({ currentPageIndex: currentPageIndex + 1 })
+                    audio.play()
+                    }}
+                    >
                     <svg xmlns="http://www.w3.org/2000/svg" width="33.603" height="25.243" viewBox="0 0 33.603 25.243">
                         <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(-6 -5.379)">
                             <path id="Tracé_52" data-name="Tracé 52" d="M7.5,18H38.1" transform="translate(0)" fill="none" stroke={this.props.colorCarnet} strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
