@@ -3,6 +3,7 @@ import React from 'react'
 import Carnet from "../Carnet/Carnet";
 import PropTypes from 'prop-types';
 import Song from '../../audio/Musique.mp3'
+import SongB from '../../audio/Bouton.mp3'
 
 class Header extends React.Component {
 
@@ -37,9 +38,14 @@ class Header extends React.Component {
                 <audio loop src={Song} id='musiqueSite' onLoadStart={()=>{
                 const audioSite = document.getElementById('musiqueSite')
                 audioSite.play()
-
                 }} />
-    
+                {
+                   this.props.allowCarnet ? (<audio src={SongB} id='audioBouton' onLoadStart={()=>{
+                    const boutonAudio = document.getElementById('audioBouton')
+                    boutonAudio.play()
+                }} />) : (<div></div>)
+                }
+                
                 <div className={styles.svgson}>
                 
                 {

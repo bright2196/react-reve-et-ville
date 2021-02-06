@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./NormalButton.module.scss";
 import PropTypes from "prop-types";
 
+
 class NormalButton extends React.Component {
 
   //   const brown = () => "hsl(22, 79%, 17%)";

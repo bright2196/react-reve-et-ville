@@ -25,3 +25,23 @@
     position: absolute;
 }
 
+.clickableArea {
+    width: 230px;
+    height: 130px;
+    position: relative;
+    left: -25px;
+    top: -135px;
+    cursor: pointer;
+  }
+
+  .boutonSuivantContainer {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transition: transform 330ms ease-in-out;
+}
+
+.boutonSuivantContainer:hover {
+    transform: translateX(-20px);
+    cursor: pointer;
+}
