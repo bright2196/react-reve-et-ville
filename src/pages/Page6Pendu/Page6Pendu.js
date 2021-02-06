@@ -56,18 +56,15 @@ class Page6Pendu extends React.Component {
             :
             (
               <div className={styles.animFadeIn} >
-                <img src={note1} className={styles.img} alt=""/>
-                <div className={styles.btnContainer}>
-                  <BoxText textBoxContenu="'Ses treize _ _ _ _ _ _ _ _ ? ' Qu'est-ce qu'il a voulu dire ? Quel est le mot secret?" namePerso="Vous" />
-                  <div onClick={() => {
+                <img src={note1} className={styles.img} alt="" onClick={() => {
                     const motJoueur = prompt('Quel est le mot secret ?')
                     if(motJoueur === 'tableaux' | motJoueur === 'Tableaux' | motJoueur === 'TABLEAUX' ){
                       this.setState({ win: true })
                       console.log('tableaux a bien été trouvé ')
                     }
-                    }} className={styles.btn}>
-                    <NormalButton buttonText="Faire un essai" link="" />
-                  </div>
+                    }}/>
+                <div className={styles.btnContainer}>
+                  <BoxText textBoxContenu="'Ses treize _ _ _ _ _ _ _ _ ? ' Qu'est-ce qu'il a voulu dire ? Quel est le mot secret?" namePerso="Vous" />
                 </div>
               </div>
             )
