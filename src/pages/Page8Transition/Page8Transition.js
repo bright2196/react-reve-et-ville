@@ -16,7 +16,7 @@ const Page8Transition = () => {
       <div className={styles.containerPage8Transition}>
         <BackgroundImg ImageNum={2} Blur={true}/>
           <div className={styles.containerPage8Transition}>
-            <img src={imageArch} />
+            <img src={imageArch} alt=""/>
             <div className={styles.boutonSuivantContainer}>
             <Link href="pageGravurePoussiere"  onClick={setBlowDetected(false)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">

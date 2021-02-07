@@ -1,6 +1,6 @@
 import styles from "./Page5Salon.module.scss";
 import React from 'react'
-import NormalButton from "../../components/NormalButton/NormalButton";
+// import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from '../../components/Link/Link'
 import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 import BoxText from "../../components/BoxText/BoxText";
