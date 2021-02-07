@@ -6,6 +6,7 @@ import NormalButton from "../../components/NormalButton/NormalButton";
 import Link from "../../components/Link/Link";
 import BackgroundImg from "../../components/BackgroundImage/BackgroundImage";
 import Header from "../../components/Header/Header";
+import Song from '../../audio/Deverouille.mp3'
 
 const Page7Suie = () => {
   const [win, setwin] = useState(false);
@@ -13,6 +14,7 @@ const Page7Suie = () => {
   return (
     <div>
       <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} />
+      <audio src={Song} id='SuieTrouversong' />
       <div className={styles.containerPage7Suie}>
         <BoxText
           textBoxContenu="Mince, le tableau est endommagé. Le temps ne l'a pas épargné… Je n'arrive pas à discerner les détails. Mais peut être qu'avec un peu de lumière …"
@@ -56,6 +58,8 @@ const Page7Suie = () => {
                   (code === "arch 342") |
                   (code === "arch342")
                 ) {
+                  const audio = document.getElementById("SuieTrouversong")
+                  audio.play()
                   setwin(true);
                 }
               }}

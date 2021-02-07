@@ -5,6 +5,7 @@ import Link from '../../components/Link/Link'
 import BoxText from "../../components/BoxText/BoxText";
 import BackgroundImg from "../../components/BackgroundImage/BackgroundImage"
 import Header from '../../components/Header/Header'
+import Song from '../../audio/Deverouille.mp3'
 
 // Img
 import note1 from '../../img/pendu/noteTableaux.png'
@@ -26,6 +27,7 @@ class Page6Pendu extends React.Component {
     return (
       <div>
         <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true}/>
+        <audio src={Song} id='PenduTrouversong' />
         <div className={styles.hintTuto}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12.492" height="31.072" viewBox="0 0 12.492 31.072">
             <g id="Groupe_16" data-name="Groupe 16" transform="translate(0.246)">
@@ -73,6 +75,8 @@ class Page6Pendu extends React.Component {
                 <img src={note1} className={styles.img} alt="" onClick={() => {
                     const motJoueur = prompt('Quel est le mot secret ?')
                     if(motJoueur === 'tableaux' | motJoueur === 'Tableaux' | motJoueur === 'TABLEAUX' ){
+                      const audio = document.getElementById("PenduTrouversong")
+                      audio.play()
                       this.setState({ win: true })
                       console.log('tableaux a bien été trouvé ')
                     }

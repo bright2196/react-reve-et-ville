@@ -6,6 +6,7 @@ import Link from "../../components/Link/Link";
 import BackgroundImg from "../../components/BackgroundImage/BackgroundImage";
 import Header from "../../components/Header/Header";
 import Loupe from "../../components/Loupe/Loupe";
+import Song from '../../audio/Deverouille.mp3'
 
 class Page4Loupe extends React.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ class Page4Loupe extends React.Component {
     return (
       <div>
         <Header colorIcones={true} allowPageSecrete={false} allowCarnet={true} />
+        <audio src={Song} id='loupeTrouversong' />
         <div className={styles.containerPage4Loupe}>
           <BackgroundImg ImageNum={2} Blur={true} />
 
@@ -60,6 +62,8 @@ class Page4Loupe extends React.Component {
                           (motJoueur === "39 demi")
                         ) {
                           openCarnet()
+                          const audio = document.getElementById("loupeTrouversong")
+                          audio.play()
                           this.setState({ win: true });
                         }
                       }

@@ -7,4 +7,14 @@
     align-items: center;
 }
 
+.boutonSuivantContainer {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transition: transform 330ms ease-in-out;
+}
 
+.boutonSuivantContainer:hover {
+    transform: translateX(-20px);
+    cursor: pointer;
+}
