@@ -16,7 +16,7 @@ class Indices extends React.Component {
     return (
       <div className={parentClassName}>
         <h1 >INDICE</h1>
-        <img src={bgImage}/>
+        <img src={bgImage} alt=""/>
         <div className={styles.indiceContainer}>
             {this.props.page === 1 && (<p>Aide toi de ton carnet pour trouver le bon emplacement. Clique sur la carte à l 'endroit souhaité lorsque tu l'as trouvé. Échec et mat…</p>)}
             {this.props.page === 2 && (<p>Analysez bien tous les détails de cette pièce du musée. Cela devrait vous permettre de comprendre le sens de l’énigme.</p>)}
