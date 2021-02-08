@@ -13,7 +13,7 @@ const Page7Suie = () => {
 
   return (
     <div>
-      <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} />
+      <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} page={6} />
       <audio src={Song} id='SuieTrouversong' />
       <div className={styles.containerPage7Suie}>
         <BoxText

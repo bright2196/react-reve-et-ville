@@ -11,7 +11,7 @@ import Song from '../../audio/Indice.mp3'
 const Page11GrandMere = () => {
   return (
     <div>
-      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0}/>
       <audio src={Song} id='songGrandMere' onLoadStart={()=>{
         const audio = document.getElementById('songGrandMere')
         audio.play()

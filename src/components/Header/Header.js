@@ -2,6 +2,7 @@ import styles from "./Header.module.scss";
 import React from 'react'
 import Carnet from "../Carnet/Carnet";
 import PropTypes from 'prop-types';
+import Indices from '../Indices/Indices'
 import Song from '../../audio/Musique.mp3'
 import SongB from '../../audio/Bouton.mp3'
 
@@ -11,7 +12,8 @@ class Header extends React.Component {
         super(props);
         this.state = {
             onCarnet: false,
-            setSong: true
+            setSong: true,
+            onIndices: false
         };
        
       }
@@ -96,7 +98,10 @@ class Header extends React.Component {
         
         
                     <button>
-                    <div className={styles.stack}>
+                    <div className={styles.stack} onClick={()=>{
+                        if(this.props.allowCarnet){
+                        this.setState({ onIndices: !this.state.onIndices})
+                        }}}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
                         {
                             this.props.colorIcones === true ? (<p className={styles.pictoB}>Indices</p>) : (<p>Indices</p>)
@@ -106,7 +111,7 @@ class Header extends React.Component {
         
         
                 <button>
-                    <div className={styles.stack}>
+                    <div className={styles.stack} onClick={()=> {alert('La galerie n\'est pas encore disponible')}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
                     {
                         this.props.colorIcones === true ? (<p className={styles.pictoB}>Galerie</p>) : (<p>Galerie</p>)
@@ -119,6 +124,7 @@ class Header extends React.Component {
         
         
             </div>
+            <Indices ouverture={this.state.onIndices} colorIndice={color} page={this.props.page} />
             < Carnet ouverture={this.state.onCarnet} colorCarnet={color} allowPageSecrete={this.props.allowPageSecrete}/>
         </div>
     )

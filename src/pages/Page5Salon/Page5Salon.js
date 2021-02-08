@@ -23,7 +23,7 @@ class Page5Salon extends React.Component {
     const { findTableau } = this.state
     return (
       <div>
-        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true}/>
+        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} page={5}/>
         <audio src={Song} id='tableauTrouversong' />
         <BackgroundImg ImageNum={0} Blur={true}/>
         {

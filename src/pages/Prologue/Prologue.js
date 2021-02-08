@@ -11,7 +11,7 @@ import Header from '../../components/Header/Header'
 const Prologue = () => {
   return (
     <div>
-      <Header colorIcones={false} allowPageSecrete={false} allowCarnet={true}/>
+      <Header colorIcones={false} allowPageSecrete={false} allowCarnet={true} page={0}/>
       <div className={styles.boutonSuivantContainer}>
             <Link href="pageCarte" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">

@@ -1,0 +1,41 @@
+.ContainerIndiceOff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top:20vh;
+    transform: translateX(100vw);
+    transition: transform 700ms;
+}
+
+.ContainerIndiceOn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top:20vh;
+    transform: translateX(40vw);
+    transition: transform 700ms;
+}
+
+.indiceContainer{
+    max-width: 20vh;
+    position: absolute;
+    top : 70px
+}
+
+.indiceBlanc{
+    color: #FFFDF1;
+}
+
+.indiceNoir{
+    color: hsl(22, 79%, 17%);
+}

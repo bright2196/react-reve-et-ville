@@ -10,7 +10,7 @@ import Header from '../../components/Header/Header'
 const Page10GravureSansPoussiere = () => {
   return (
     <div>
-      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0}/>
       <div className={styles.containerPage9GravurePoussiere}>
         <BackgroundImage ImageNum={3} Blur={true} GreyColor={true} BrownColor={false}/>
         <div className={styles.imageContainer}>

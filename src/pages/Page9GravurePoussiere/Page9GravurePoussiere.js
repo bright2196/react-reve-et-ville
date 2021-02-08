@@ -69,7 +69,7 @@ const Page9GravurePoussiere = () => {
   const boutonSuivantContainerClassName = !BlowDetected ? styles.boutonSuivantContainerHidden : styles.boutonSuivantContainerVisible
   return (
     <div>
-      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={7}/>
       <div className={styles.containerPage9GravurePoussiere}>
         <BackgroundImage ImageNum={3} Blur={true} GreyColor={true} BrownColor={false}/>
         <div className={styles.imageContainer}>

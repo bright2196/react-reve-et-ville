@@ -8,7 +8,7 @@ import Header from '../../components/Header/Header'
 const Tutoriel = () => {
   return (
   <div>
-    <Header colorIcones={false} allowPageSecrete={false} allowCarnet={true}/>
+    <Header colorIcones={false} allowPageSecrete={false} allowCarnet={true} page={0}/>
     <div className={styles.hintTuto}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12.492" height="31.072" viewBox="0 0 12.492 31.072">
             <g id="Groupe_16" data-name="Groupe 16" transform="translate(0.246)">

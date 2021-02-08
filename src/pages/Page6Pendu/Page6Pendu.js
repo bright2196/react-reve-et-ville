@@ -26,7 +26,7 @@ class Page6Pendu extends React.Component {
 
     return (
       <div>
-        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true}/>
+        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} page={4}/>
         <audio src={Song} id='PenduTrouversong' />
         <div className={styles.hintTuto}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12.492" height="31.072" viewBox="0 0 12.492 31.072">
