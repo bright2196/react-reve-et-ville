@@ -17,6 +17,7 @@
     left: 20%;
     letter-spacing: 0.1vw;
     width: 60vw;
+    text-align: center;
 }
 
 // Stylysation du bouton
@@ -74,15 +75,15 @@ svg{
     align-items: center;
 }
 
-.animFadeIn {
+// .animFadeIn {
     
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari et Chrome */
-    -o-animation: fadein 2s; /* Opera */
+//     animation: fadein 2s;
+//     -moz-animation: fadein 2s; /* Firefox */
+//     -webkit-animation: fadein 2s; /* Safari et Chrome */
+//     -o-animation: fadein 2s; /* Opera */
 
-    transition: all duration 2s;
-}
+//     transition: all duration 2s;
+// }
 
 @keyframes fadein {
     from {
