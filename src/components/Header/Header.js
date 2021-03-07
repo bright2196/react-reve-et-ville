@@ -55,7 +55,21 @@ class Header extends React.Component {
                                 )
                             }
                             {
-                                this.props.colorIcones === true ? (<p className={styles.pictoB}>Carnet</p>) : (<p>Carnet</p>)
+                                this.props.colorIcones === true ? (
+                                             this.state.onCarnet?
+                                             ( 
+                                                <p className={styles.pictoB}> Fermer le carnet</p>
+                                             ):(
+                                                <p className={styles.pictoB}> Ouvrir le carnet</p>
+                                             )
+                                        ) : (
+                                            this.state.onCarnet?
+                                            (
+                                                <p> Fermer le carnet</p>
+                                            ):(
+                                                <p> Ouvrir le carnet</p>
+                                            )
+                                        )
                             }
                             
                         </div>
