@@ -64,7 +64,7 @@ const Page7Suie = () => {
                 }
               }}
             >
-              <NormalButton buttonText="Essai un code" />
+              <NormalButton buttonText="Essaie un code" />
             </div>
           )}
         </div>

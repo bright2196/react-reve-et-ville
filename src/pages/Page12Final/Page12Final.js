@@ -17,7 +17,7 @@ class Page12Final extends React.Component {
         <BackgroundImg ImageNum={3} Blur={false}/>
         <img src={ImageLettreFinal} className={styles.imgFinal} alt='' />
               <BoxText textBoxContenu='Je te félicite. Tu viens de découvrir l’un des secrets les mieux gardés par notre famille. Si tu lis cette lettre, c’est probablement que tu as réussi 
-            à résoudre toutes les énigmes que ta grand-mère a disséminé tout au long de ses travaux... '></BoxText>
+            à résoudre toutes les énigmes que ta grand-mère a disséminées tout au long de ses travaux... '></BoxText>
             <div className={styles.boutonSuivantContainer}>
             <Link href="pageFinal2" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">

@@ -18,7 +18,7 @@ class Page12Final extends React.Component {
         <BackgroundImg ImageNum={3} Blur={false}/>
         <img src={ImageLettreFinal} className={styles.imgFinal} alt='' />
             <BoxText textBoxContenu='
-            À l’heure où j’écris ces lignes, la place de la femme au sein du milieu artistique n’est pas très bien perçue, c’est pour cela que nous l’avons dissimulé. 
+            À l’heure où j’écris ces lignes, la place de la femme au sein du milieu artistique n’est pas très bien perçue, c’est pour cela que nous l’avons dissimulée. 
             Il faudra du temps, mais je sais que cela changera un jour, j’en suis persuadé.
             Nous tenions à te dire que nous t’aimons tous les deux. Prends soin de l’héritage de ta grand-mère et va dire au monde que l’art est quelque chose de magnifique.
             Ton grand-père.'></BoxText>
