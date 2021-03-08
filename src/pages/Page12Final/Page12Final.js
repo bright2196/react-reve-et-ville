@@ -12,7 +12,8 @@ class Page12Final extends React.Component {
   render() {
     return (
     <div >
-      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0} pageCarnet={0}/>
+      <audio  id='Winsong' />
       <div className={styles.containerPage12Final}>
         <BackgroundImg ImageNum={3} Blur={false}/>
         <img src={ImageLettreFinal} className={styles.imgFinal} alt='' />

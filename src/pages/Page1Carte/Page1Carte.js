@@ -6,13 +6,13 @@ import Carte from "./img/carteBordeaux.png"
 import Link from '../../components/Link/Link'
 import BackgroundImg from '../../components/BackgroundImage/BackgroundImage'
 import Header from '../../components/Header/Header'
+import BoxText from '../../components/BoxText/BoxText'
 
 
 const Page1Carte = () => {
   return (
     <div>
-      <Header colorIcones={true} allowPageSecrete={false} allowCarnet={true} page={1}/>
-
+      <Header colorIcones={true} allowPageSecrete={false} allowCarnet={true} page={1} pageCarnet={1}/>
       <div className={styles.containerPage1Carte}>
         <BackgroundImg ImageNum={0} Blur={false} BrownColor={true}/>
           <div className={styles.containerCarteImage}>
@@ -24,6 +24,10 @@ const Page1Carte = () => {
             </div> 
           </div>
       </div>
+      <BoxText 
+        textBoxContenu='...[à compléter]'
+        namePerso="Vous"
+      />
     </div>
   );
 };

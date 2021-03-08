@@ -1,7 +1,7 @@
 // Style paragraphe
 
 .homedesc{
-    font-family: 'Mirage';
+    font-family: 'Cormorant Garamond', serif !important;
     font-size: 18px;
     color: #4C2209;
     letter-spacing: 0.1vw;
@@ -9,7 +9,7 @@
 }
 
 .homeprenom{
-    font-family: 'Mirage';
+    font-family: 'Cormorant Garamond', serif !important;
     font-size: 18px;
     color: #4C2209;
     position: absolute;
@@ -28,7 +28,7 @@
     border-radius: 5px;
     border-color: #4C2209;
     color: #4C2209;
-    font-family: "Mirage";
+    font-family: 'Cormorant Garamond', serif !important;
     letter-spacing: 1px;
     font-size: 18px;
     background: none;
@@ -49,7 +49,7 @@ svg{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Regis';
+    font-family: 'Cormorant Garamond', serif !important;
     font-size: 40px;
     color: #4C2209;
 }

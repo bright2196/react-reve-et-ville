@@ -26,9 +26,13 @@
   width: 90px;
   height: 90px;
   position: relative;
-  left: -125px;
+  left: -75px;
   top: 35px;
   cursor: pointer;
+}
+
+.clickableArea :hover{
+  backdrop-filter: blur(0.5px);
 }
 
 .hintCarnet {
@@ -45,7 +49,7 @@
 
 .hintText {
   width: 200px;
-  font-family: "MirageThin";
+  font-family: 'Cormorant Garamond', serif !important;
   font-size: 14px;
   letter-spacing: 1px;
   color: #D9D1CC;

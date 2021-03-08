@@ -3,10 +3,9 @@ import React from 'react'
 import Carnet from "../Carnet/Carnet";
 import PropTypes from 'prop-types';
 import Indices from '../Indices/Indices'
-import SongB from '../../audio/Bouton.mp3'
+// import SongB from '../../audio/Bouton.mp3'
 
 class Header extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -16,10 +15,8 @@ class Header extends React.Component {
         };
        
       }
-
     render() {
     let color = ''
-
     if(this.props.colorIcones === true | this.props.colorIcones === false )
     {
         if(this.props.colorIcones === true)
@@ -32,7 +29,6 @@ class Header extends React.Component {
     }else{
         color = " #4C2209"
     }
-
     return(
         <div>
             <div className={styles.header}>
@@ -56,20 +52,20 @@ class Header extends React.Component {
                             }
                             {
                                 this.props.colorIcones === true ? (
-                                             this.state.onCarnet?
-                                             ( 
-                                                <p className={styles.pictoB}> Fermer le carnet</p>
-                                             ):(
-                                                <p className={styles.pictoB}> Ouvrir le carnet</p>
-                                             )
-                                        ) : (
-                                            this.state.onCarnet?
-                                            (
-                                                <p> Fermer le carnet</p>
+                                    this.state.onCarnet?
+                                            ( 
+                                            <p className={styles.pictoB}> Fermer le carnet</p>
                                             ):(
-                                                <p> Ouvrir le carnet</p>
+                                            <p className={styles.pictoB}> Ouvrir le carnet</p>
                                             )
+                                    ) : (
+                                        this.state.onCarnet?
+                                        (
+                                            <p> Fermer le carnet</p>
+                                        ):(
+                                            <p> Ouvrir le carnet</p>
                                         )
+                                    )
                             }
                             
                         </div>
@@ -93,7 +89,7 @@ class Header extends React.Component {
         
             </div>
             <Indices ouverture={this.state.onIndices} colorIndice={color} page={this.props.page} />
-            < Carnet ouverture={this.state.onCarnet} colorCarnet={color} allowPageSecrete={this.props.allowPageSecrete}/>
+            < Carnet ouverture={this.state.onCarnet} colorCarnet={color} allowPageSecrete={this.props.allowPageSecrete} pageCarnet={this.props.pageCarnet}/>
         </div>
     )
 }

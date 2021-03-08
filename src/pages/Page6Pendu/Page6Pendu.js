@@ -9,6 +9,8 @@ import Song from '../../audio/Deverouille.mp3'
 
 // Img
 import note1 from '../../img/pendu/noteTableaux.png'
+import note2 from '../../img/pendu/noteTableaux1.png'
+import note3 from '../../img/pendu/noteTableaux2.png'
 import noteWin from '../../img/pendu/noteTableauxWin.png'
 
 class Page6Pendu extends React.Component {
@@ -17,6 +19,7 @@ class Page6Pendu extends React.Component {
     super(props);
     this.state = {
         win: false,
+        test: 0,
     };
   }
 
@@ -26,7 +29,7 @@ class Page6Pendu extends React.Component {
 
     return (
       <div>
-        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} page={4}/>
+        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} page={4} pageCarnet={4}/>
         <audio src={Song} id='PenduTrouversong' />
         <div className={styles.hintTuto}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12.492" height="31.072" viewBox="0 0 12.492 31.072">
@@ -72,8 +75,10 @@ class Page6Pendu extends React.Component {
             :
             (
               <div className={styles.animFadeIn} >
-                <img src={note1} className={styles.img} alt="" onClick={() => {
+                <img src={this.state.test >= 2? (this.state.test >= 4?(note3):(note2)):(note1)} className={styles.img} alt="" onClick={() => {
                     const motJoueur = prompt('Quel est le mot secret ?')
+                    this.setState({ test: this.state.test + 1 })
+                    console.log(this.state.test)
                     if(motJoueur === 'tableaux' | motJoueur === 'Tableaux' | motJoueur === 'TABLEAUX' ){
                       const audio = document.getElementById("PenduTrouversong")
                       audio.play()

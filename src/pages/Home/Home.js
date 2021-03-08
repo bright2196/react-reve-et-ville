@@ -4,18 +4,17 @@ import React from 'react'
 import Link from '../../components/Link/Link'
 import NormalButton from "../../components/NormalButton/NormalButton";
 import BackgroundImage from '../../components/BackgroundImage/BackgroundImage'
-import Header from '../../components/Header/Header'
+// import Header from '../../components/Header/Header'
 
 const Home = () => {
   const tel = window.innerWidth
 
   return (
       <div>
-        <Header colorIcones={false} allowPageSecrete={false} allowCarnet={false}/>
         <div className={[styles.titlescreen, styles.animFadeIn].join(' ')}>
             <BackgroundImage ImageNum={0} Blur={false} GreyColor={true} BrownColor={false}/>
             <div className={styles.title}>
-              <h1>L'amour de l'art</h1>
+              <h1>L' Amour de l' Art</h1>
               <p className={styles.homedesc}>Lancez-vous dans une course aux indices et plongez-vous dans les toiles du Musée des Beaux-Arts de Bordeaux pour révéler au grand jour un secret bien gardé.</p>
             </div>
             <div className={styles.beginbutton}>

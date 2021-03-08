@@ -12,7 +12,7 @@ const Page8Transition = () => {
   const { setBlowDetected } = useContext(AppContext)
   return (
     <div>
-      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0} pageCarnet={0}/>
       <div className={styles.containerPage8Transition}>
         <BackgroundImg ImageNum={2} Blur={true}/>
           <div className={styles.containerPage8Transition}>

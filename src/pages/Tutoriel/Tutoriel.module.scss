@@ -7,7 +7,7 @@
 }
 
 .tutorielText {
-    font-family: "Mirage";
+    font-family: 'Cormorant Garamond', serif !important;
     font-size: 18px;
     width: 60vw;
     color: #4C2209;
@@ -74,7 +74,7 @@
 
 .hintTuto {
     position: absolute;
-    right: 8%;
+    right: 3vw;
     top: 13%;
     z-index: 1000;
     display: flex;
@@ -85,13 +85,13 @@
   }
   
   
-  .hintTextTuto {
+.hintTextTuto {
     width: 260px;
-    font-family: "MirageThin";
+    font-family: 'Cormorant Garamond', serif !important;
     font-size: 13px;
     letter-spacing: 1px;
     color: #4C2209;
     margin-top: 20px;
     text-align: center;
-  }
+}
   

@@ -26,11 +26,12 @@ class Carnet extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentPageIndex: 0
+            currentPageIndex: this.props.pageCarnet
         };
       }
 
     audioPage = new Audio(AudioPage);
+
 
     render() {
     const { currentPageIndex } = this.state
@@ -41,9 +42,11 @@ class Carnet extends React.Component {
 
     const audio = document.getElementById('audioPageCarnet');
 
+    
+
     return (
     <div> 
-        <div className={parentClassName} >
+        <div className={parentClassName} id='Carnet'>
             {
                 currentPageIndex > 0 
                 ?

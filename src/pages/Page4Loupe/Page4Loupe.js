@@ -7,6 +7,7 @@ import BackgroundImg from "../../components/BackgroundImage/BackgroundImage";
 import Header from "../../components/Header/Header";
 import Loupe from "../../components/Loupe/Loupe";
 import Song from '../../audio/Deverouille.mp3'
+// import { createPortal } from "react-dom";
 
 class Page4Loupe extends React.Component {
   constructor(props) {
@@ -19,15 +20,18 @@ class Page4Loupe extends React.Component {
   render() {
     function openCarnet() {
       console.log('ouvrir le carnet !')
+      // let carnet = document.getElementById('Carnet')
+      // console.log(carnet)
+      // carnet.classList.remove(styles.ContainerCarnetOff)
+      // carnet.classList.add(styles.ContainerCarnetOn)
     }
     const { win } = this.state;
     return (
       <div>
-        <Header colorIcones={true} allowPageSecrete={false} allowCarnet={true} page={3} />
+        <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={3} pageCarnet={4}/>
         <audio src={Song} id='loupeTrouversong' />
         <div className={styles.containerPage4Loupe}>
           <BackgroundImg ImageNum={2} Blur={true} />
-
           {win ? (
             <div className={styles.animFadeIn}>
               <div className={styles.btn}>
@@ -54,18 +58,10 @@ class Page4Loupe extends React.Component {
                   if(x > xTarget - 40 && x < xTarget + 40){
                     if(y > yTarget - 40 && y < yTarget + 40){
                       console.log('gooooood')
-                      const motJoueur = prompt("Vous avez trouvé ?");
-                        if (
-                          (motJoueur === "39.5") |
-                          (motJoueur === "39,5") |
-                          (motJoueur === "39 et demi") |
-                          (motJoueur === "39 demi")
-                        ) {
                           openCarnet()
                           const audio = document.getElementById("loupeTrouversong")
                           audio.play()
                           this.setState({ win: true });
-                        }
                       }
                     }
                 }}>
