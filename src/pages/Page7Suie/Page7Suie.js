@@ -13,7 +13,7 @@ const Page7Suie = () => {
 
   return (
     <div>
-      <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} page={6} pageCarnet={0}/>
+      <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} page={6} pageCarnet={3}/>
       <audio src={Song} id='SuieTrouversong' />
       <div className={styles.containerPage7Suie}>
         <BoxText
@@ -50,6 +50,8 @@ const Page7Suie = () => {
                             let code = prompt("Quel est le code ?");
                             if (
                               (code === "ARCH-342") |
+                              (code === "ARCH 342") |
+                              (code === "ARCH342") |
                               (code === "arch-342") |
                               (code === "Arch-342") |
                               (code === "arch 342") |

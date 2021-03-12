@@ -28,7 +28,7 @@ class Page4Loupe extends React.Component {
     const { win } = this.state;
     return (
       <div>
-        <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={3} pageCarnet={4}/>
+        <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={3} pageCarnet={3}/>
         <audio src={Song} id='loupeTrouversong' />
         <div className={styles.containerPage4Loupe}>
           <BackgroundImg ImageNum={2} Blur={true} />

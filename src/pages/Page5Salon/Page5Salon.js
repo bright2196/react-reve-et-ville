@@ -66,6 +66,19 @@ class Page5Salon extends React.Component {
             </div>
           )
         }
+        {
+          findTableau? (
+            <div className={styles.containerPage5SalonBT}>
+              <BoxText 
+                textBoxContenu="Bravo !"
+                namePerso="Vous"
+              />
+            </div>
+          ):(
+            <div></div>
+          )
+        }
+        
       </div>
     );
   }

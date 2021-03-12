@@ -87,7 +87,7 @@ class Page6Pendu extends React.Component {
                     }
                     }}/>
                 <div className={styles.btnContainer}>
-                  <BoxText textBoxContenu="'Ses treize _ _ _ _ _ _ _ _ ? ' Qu'est-ce qu'il a voulu dire ? Quel est le mot secret?" namePerso="Vous" />
+                  <BoxText textBoxContenu="'Ses treize _ _ _ _ _ _ _ _ ? ' Qu'est-ce qu'il a voulu dire ? Quel est le mot secret? Voyons si le carnet peut m'être utile... " namePerso="Vous" />
                 </div>
               </div>
             )
