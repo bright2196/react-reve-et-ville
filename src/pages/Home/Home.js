@@ -35,7 +35,7 @@ const Home = () => {
                 )
               }
                       
-              <p className={styles.homeprenom}>Experience réalisé par : Justine Magry, Hugo Blanchard, Antoine Tardivel, Claire Rieuset, Valentin Genest et Maëlle Rabouan</p>
+              <p className={styles.homeprenom}>Experience réalisé par : Justine Magry, Hugo Blanchard, Antoine Tardivel, Claire Rieusset, Valentin Genest et Maëlle Rabouan</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="100" height="1" viewBox="0 0 100 1"><defs><style></style></defs><line className="a" x1="100" transform="translate(0 0.5)"/></svg>
             </div>
           </div>
