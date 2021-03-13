@@ -8,7 +8,7 @@ import Header from '../../components/Header/Header'
 const Tutoriel = () => {
   return (
   <div>
-    <Header colorIcones={false} allowPageSecrete={false} allowCarnet={true} page={0}/>
+    <Header colorIcones={false} allowPageSecrete={false} allowCarnet={true} page={0} pageCarnet={0}/>
     <div className={styles.hintTuto}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12.492" height="31.072" viewBox="0 0 12.492 31.072">
             <g id="Groupe_16" data-name="Groupe 16" transform="translate(0.246)">
@@ -17,7 +17,7 @@ const Tutoriel = () => {
                 <path id="Tracé_51" data-name="Tracé 51" d="M0,10A19.413,19.413,0,0,1,2.025,3.9,12.233,12.233,0,0,1,6,0" transform="translate(6 21)" fill="none" stroke="#4c2209" strokeWidth="1"/>
             </g>
             </svg>
-              <p className={styles.hintTextTuto}>Vous avez accès à votre carnet en cliquant ici. Vous avez également accès aux indices récoltés tout au long de votre parcours. L'onglet galerie vous permet d'accéder aux vraies références des œuvres utilisées dans l'histoire. </p>
+              <p className={styles.hintTextTuto}>Vous avez accès à votre carnet en cliquant ici. Vous avez également accès aux indices récoltés tout au long de votre parcours. </p>
       </div>
     <div className={styles.containerTutoriel}>
       <BackgroundImg ImageNum={0} Blur={false}/>

@@ -23,7 +23,7 @@
 }
 .namePerso {
     text-decoration: none;
-    font-family: "MirageBold";
+    font-family: 'Cormorant Garamond', serif !important;
     letter-spacing: 0.1vw;
     font-weight: 500;
     font-size: 16px;
@@ -34,9 +34,9 @@
 
 .corpsBoxText {
     text-decoration: none;
-    font-family: "Mirage";
+    font-family: 'Cormorant Garamond', serif !important;
     letter-spacing: 0.1vw;
-   
+    padding-right: 20px !important;
     font-size: 16px;
     display: flex;
     color: #FFFFFF;

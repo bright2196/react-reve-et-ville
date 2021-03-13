@@ -14,12 +14,13 @@ class Page12Final extends React.Component {
 
     return (
     <div >
-      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0} pageCarnet={0}/>
+      <audio  id='Winsong' />
       <div className={styles.containerPage12Final}>
         <BackgroundImg ImageNum={3} Blur={false}/>
         <img src={ImageLettreFinal} className={styles.imgFinal} alt='' />
                   <BoxText textBoxContenu='Car oui, la véritable artiste derrière tout ça c’était elle. 
-                  Tu as su faire preuve d’observation, de déduction et de patience pour en arriver là. Ta grand-mère et moi aimions par-dessus tout les énigmes et jeux de rôles. 
+                  Tu as su faire preuve d’observation, de déduction et de patience pour en arriver là. Ta grand-mère et moi aimions par-dessus tout les énigmes et les jeux de rôles. 
                   Dès le début, cela était son idée, et nous sommes fiers que tu aies pu en arriver au bout, fiers de toi.
                   '></BoxText>
                   <div className={styles.boutonSuivantContainer}>

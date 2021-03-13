@@ -23,7 +23,7 @@ class Page5Salon extends React.Component {
     const { findTableau } = this.state
     return (
       <div>
-        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} page={5}/>
+        <Header colorIcones={false} allowPageSecrete={true} allowCarnet={true} page={5} pageCarnet={0}/>
         <audio src={Song} id='tableauTrouversong' />
         <BackgroundImg ImageNum={0} Blur={true}/>
         {
@@ -47,6 +47,7 @@ class Page5Salon extends React.Component {
                             </g>
                             </svg>
                     </Link>
+                    
               </div>
             </div>
           )
@@ -65,6 +66,19 @@ class Page5Salon extends React.Component {
             </div>
           )
         }
+        {
+          findTableau? (
+            <div className={styles.containerPage5SalonBT}>
+              <BoxText 
+                textBoxContenu="Bravo !"
+                namePerso="Vous"
+              />
+            </div>
+          ):(
+            <div></div>
+          )
+        }
+        
       </div>
     );
   }

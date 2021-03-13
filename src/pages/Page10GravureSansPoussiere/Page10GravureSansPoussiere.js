@@ -10,7 +10,8 @@ import Header from '../../components/Header/Header'
 const Page10GravureSansPoussiere = () => {
   return (
     <div>
-      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={0} pageCarnet={0}/>
+      <audio  id='Winsong' />
       <div className={styles.containerPage9GravurePoussiere}>
         <BackgroundImage ImageNum={3} Blur={true} GreyColor={true} BrownColor={false}/>
         <div className={styles.imageContainer}>

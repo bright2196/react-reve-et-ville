@@ -7,6 +7,7 @@ import image from '../../img/tableaux/gravure.jpg'
 import texture from '../../img/filtres/filtregravure.png'
 import Header from '../../components/Header/Header'
 import { AppContext } from '../../App/AppProvider'
+import Winsong from '../../audio/Deverouille.mp3'
 
 const Page9GravurePoussiere = () => {
 
@@ -20,6 +21,7 @@ const Page9GravurePoussiere = () => {
     },
 
     function(stream) {
+      let ok = 0
       let audioContext = new AudioContext();
       let analyser = audioContext.createAnalyser();
       let microphone = audioContext.createMediaStreamSource(stream);
@@ -46,14 +48,28 @@ const Page9GravurePoussiere = () => {
           }
 
           var average = values / length;
-          
+          setTimeout(function(){ 
+            ok ++
+            if (ok === 1){
+              console.log("set time out");
+              setBlowDetected(true) 
+              AudioWIN()
+            }
+            
+          }, 15000);
 
           // console.log(Math.round(average - 40));
           if (average > 90){
             console.log("Blow detected");
             setBlowDetected(true)
             console.log(BlowDetected);
+            AudioWIN()
           }
+
+          function AudioWIN() {
+              document.getElementById('Winsong').play()
+          }
+          
 
         } // end fn stream
     },
@@ -69,7 +85,8 @@ const Page9GravurePoussiere = () => {
   const boutonSuivantContainerClassName = !BlowDetected ? styles.boutonSuivantContainerHidden : styles.boutonSuivantContainerVisible
   return (
     <div>
-      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={7}/>
+      <Header colorIcones={true} allowPageSecrete={true} allowCarnet={true} page={7} pageCarnet={0}/>
+      <audio src={Winsong} id='Winsong' />
       <div className={styles.containerPage9GravurePoussiere}>
         <BackgroundImage ImageNum={3} Blur={true} GreyColor={true} BrownColor={false}/>
         <div className={styles.imageContainer}>
@@ -81,7 +98,7 @@ const Page9GravurePoussiere = () => {
           textBoxContenu="La gravure est pleine de poussière, la dépoussiérer ne ferait pas de mal... 🌬"
         />
       </div>
-      <div className={boutonSuivantContainerClassName}>
+      <div className={boutonSuivantContainerClassName} >
             <Link href="pageGravureSansPoussiere" >
               <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">
                 <g id="Groupe_31" data-name="Groupe 31" transform="translate(-1233 -337)">
